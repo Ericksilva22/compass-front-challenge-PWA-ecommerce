@@ -8,6 +8,7 @@ export const Headerhome = styled.div`
 export const HeaderNav = styled.nav`
     width: 40%;
     margin-right: 15rem;
+    margin-left: 1rem;
 `
 
 export const Headerform = styled.form`
@@ -48,6 +49,8 @@ export const Headerinput = styled.input`
 export const Li = styled.li`
     list-style: none;
     color:  #171520;
+    font-weight: 500;
+    font-size: 0.875rem;
 ` 
 
 export const UlNav = styled.ul`

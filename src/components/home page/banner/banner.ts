@@ -17,26 +17,25 @@ export const Bannerh1 = styled.h1`
 `
 
 export const BannerFigure = styled.figure`
-   width:1320px;
+   width:98%;
    margin: 0 auto;
 `
 
 export const BannerImg = styled.img `
     width:100%;
     border-radius: 24px;
-
 `
 
 export const BannerDivCarry = styled.div`
-    width: 659px;
-    height: 316px;
+    width: 48.9%;
+    height: 19.75rem;
     background: rgba(222, 222, 222, 0.7);
     backdrop-filter: blur(2.5px);
     border-radius: 24px 0px 0px 24px;
     color: #1B4B66;
     position: relative;
     top: -24rem;
-    left: 42.3rem
+    left: 42.3rem;
 `
 
 export const BannerDivCarryH1 = styled.h1`

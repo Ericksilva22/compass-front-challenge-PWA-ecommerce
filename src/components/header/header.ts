@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Headerhome = styled.div`
     display: flex;
     align-items: center;
-    font-family: 'Inter', sans-serif;
+    margin: 2% 1% 0 1%;
 `
 export const HeaderNav = styled.nav`
     width: 40%;

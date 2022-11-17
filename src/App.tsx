@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/header'
 import Banner from './components/home page/banner'
 import Handpicked from './components/home page/collections'
+import ShopBrands from './components/home page/shop'
 function App() {
   
   return (
@@ -9,6 +10,7 @@ function App() {
      <Header />
      <Banner />
      <Handpicked />
+     <ShopBrands />
     </div>
   )
 }

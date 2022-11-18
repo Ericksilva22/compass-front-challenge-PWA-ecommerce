@@ -32,31 +32,31 @@ function NewArrivals() {
             <ArrivalsItens>
                <img src={Img_arrivals2} alt="Blossom Pouch" />
                <ArrivalsItensName>
-                  <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                  <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
                   <img src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
-               <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
-               <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
+               <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
+               <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
             </ArrivalsItens>
 
             <ArrivalsItens>
                <img src={Img_arrivals3} alt="Blossom Pouch" />
                <ArrivalsItensName>
-                  <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                  <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
                   <img src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
-               <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
-               <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
+               <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
+               <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
             </ArrivalsItens>
 
             <ArrivalsItens>
                <img src={Img_arrivals4} alt="Blossom Pouch" />
                <ArrivalsItensName>
-                  <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                  <ArrivalsItensh4 >Boujee</ArrivalsItensh4 >
                   <img src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
-               <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
-               <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
+               <ArrivalsItensP>Black BAG</ArrivalsItensP>
+               <ArrivalsItensPrice>$56.49</ArrivalsItensPrice>
             </ArrivalsItens>
 
          </DivArrivalsItens>

@@ -17,7 +17,7 @@ function Banner() {
             <BannerDivCarryP> Trendy handbags collection for your party animal</BannerDivCarryP>
             <BannerButton>
                <img src={Img_arrow} alt="" />
-               <BannerSeeMore href="">See more</BannerSeeMore>
+               <BannerSeeMore href="./src/assets/Pages/page404.html">See more</BannerSeeMore>
             </BannerButton>
          </BannerDivCarry>
       </section> 

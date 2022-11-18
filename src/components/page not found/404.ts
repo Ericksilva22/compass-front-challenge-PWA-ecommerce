@@ -12,21 +12,21 @@ export const Main = styled.main`
 
 export const H1 = styled.h1`
    font-weight: 700;
-   font-size: 80px;
+   font-size: 5rem;
    color: #1B4B66;
    margin-bottom: 1rem;
 `
 
 export const H2 = styled.h2`
    font-weight: 600;
-   font-size: 50px;
+   font-size: 3.125rem;
    color: #1B4B66;
    margin-bottom: 0.2rem;
 `
 
 export const P = styled.p`
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     color: #626262;
     margin-bottom: -0.8rem;
 `
@@ -34,11 +34,11 @@ export const P = styled.p`
 export const BtnPage404 = styled.button`
     margin-top: 4rem;
     width: 15%;
-    height: 40px;
+    height: 2.5rem;
     border-radius: 14px;
     border: none;
     background-color: #1B4B66;
-    font-size: 0.875;
+    font-size: 0.875rem;
     font-weight: 400;
     
 `

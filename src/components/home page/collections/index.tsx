@@ -10,10 +10,22 @@ function Handpicked() {
       <SectionHand>
          <Handpickedh1>Handpicked Collections </Handpickedh1>
          <DivCollections >
-            <img src={Img_personalCare} alt="Personal care" />
-            <img src={Img_handbags} alt="Handbags" />
-            <img src={Img_watches} alt="Wrist Watches" />
-            <img src={Img_glasses} alt="Sun Glasses" />
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_personalCare} alt="Personal care" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_handbags} alt="Handbags" /> 
+            </a>
+            
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_watches} alt="Wrist Watches" />
+            </a>
+            
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_glasses} alt="Sun Glasses" />
+            </a>
+            
          </DivCollections >
       </SectionHand>
    )

@@ -8,34 +8,36 @@ function Footer() {
       <Footer_content>
          <ShopCategory>
             <Footer_title>Shop by category</Footer_title>
-            <Footer_links href="">Skincare</Footer_links>
-            <Footer_links href="">Personal Care</Footer_links>
-            <Footer_links href="">Handbags</Footer_links>
-            <Footer_links href="">Apparels</Footer_links>
-            <Footer_links href="">Watches</Footer_links>
-            <Footer_links href="">Eye Wear</Footer_links>
-            <Footer_links href="">Jewellery</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Skincare</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Personal Care</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Handbags</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Apparels</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Watches</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Eye Wear</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Jewellery</Footer_links>
          </ShopCategory>
 
          <ShopCategory>
             <Footer_title>About</Footer_title>
-            <Footer_links href="">Contact Us</Footer_links>
-            <Footer_links href="">About Us</Footer_links>
-            <Footer_links href="">Careers</Footer_links>
-            <Footer_links href="">Press</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Contact Us</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">About Us</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Careers</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Press</Footer_links>
          </ShopCategory>
 
          <ShopCategory>
             <Footer_title>Policy</Footer_title>
-            <Footer_links href="">Return Policy</Footer_links>
-            <Footer_links href="">Terms of Use</Footer_links>
-            <Footer_links href="">Sitemap</Footer_links>
-            <Footer_links href="">Security</Footer_links>
-            <Footer_links href="">EPR Compliance</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Return Policy</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Terms of Use</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Sitemap</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">Security</Footer_links>
+            <Footer_links href="./src/assets/Pages/page404.html">EPR Compliance</Footer_links>
          </ShopCategory>
 
          <DivLogos>
-            <Img_Logos src={Footer_logos} alt="" />
+            <a href="./src/assets/Pages/page404.html">
+               <Img_Logos src={Footer_logos} alt="" />
+            </a>
             <DivLocation>
                <img src={Footer_location} alt="Location Icon" />
                <p>United States</p>

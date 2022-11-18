@@ -18,15 +18,35 @@ function ShopBrands() {
       <SectionHand>
          <Shoph1>Shop by Brands</Shoph1>
          <DivBrands>
-            <img src={Img_zara} alt="Buy Zara" />
-            <img src={Img_DG} alt="BUY D&G" />
-            <img src={Img_HM} alt="Buy H&M" />
-            <img src={Img_channel} alt="Buy channel" />
-            <img src={Img_prada} alt="Buy prada" />
-            <img src={Img_biba} alt="Buy BIBA" />
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_zara} alt="Buy Zara" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_DG} alt="BUY D&G" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_HM} alt="Buy H&M" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_channel} alt="Buy channel" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_prada} alt="Buy prada" />
+            </a>
+
+            <a href="./src/assets/Pages/page404.html">
+               <img src={Img_biba} alt="Buy BIBA" />
+            </a>
          </DivBrands>
          <FigureShop>
-            <ImgLifestyle src={Img_Lifestyle} alt="Look makeup accessories" />
+            <a href="./src/assets/Pages/page404.html">
+               <ImgLifestyle src={Img_Lifestyle} alt="Look makeup accessories" />
+            </a>
+            
          </FigureShop>
          <DivSkin_Face >
             <div>
@@ -34,7 +54,10 @@ function ShopBrands() {
                <Skin_p>
                   Skincare <br /> Essentials
                </Skin_p>
-               <Skin_Arrow1 src={Img_arrow1} alt="Arrow icon" />
+               <a href="./src/assets/Pages/page404.html">
+                  <Skin_Arrow1 src={Img_arrow1} alt="Arrow icon" />
+               </a>
+               
             </div>
 
             <div>
@@ -42,7 +65,10 @@ function ShopBrands() {
                <Face_p>
                   Facepacks<br /> & Peels
                </Face_p>
-               <Skin_Arrow1 src={Img_arrow2} alt="Arrow icon" />
+               <a href="./src/assets/Pages/page404.html">
+                  <Skin_Arrow1 src={Img_arrow2} alt="Arrow icon" />
+               </a>
+               
             </div>
          </DivSkin_Face >
       </SectionHand>

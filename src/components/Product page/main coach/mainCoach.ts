@@ -145,3 +145,84 @@ export const A_Div_apply = styled.a`
     color: #1B4B66;
     text-decoration: none;
 `
+
+export const Div_quantity = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 30%;
+`
+
+export const H4_quantity = styled.h4`
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align:center
+`
+
+export const Div_PlusorLess = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    border: 1px solid #1B4B66;
+    border-radius: 4px;
+`
+
+export const P_quantity = styled.p`
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align:center;
+    padding-left: 0.1rem;   
+`
+
+export const Div_buttons = styled.div`
+    margin-top: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+`
+
+export const Btn_Bag = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54%;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    background: #1B4B66;
+    color: #FFFFFF;
+
+`
+
+export const P_BtnBag = styled.p`
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding-left: 0.6rem;
+`
+
+
+export const Btn_Wish = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 44px;
+    border-radius: 8px;
+    border: 2px solid #1B4B66;
+    color: #1B4B66;
+
+`
+
+export const Div_coachImages = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+`

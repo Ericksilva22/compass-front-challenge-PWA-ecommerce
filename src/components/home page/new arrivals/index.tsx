@@ -20,7 +20,9 @@ function NewArrivals() {
          </DivArrivals>
          <DivArrivalsItens>
             <ArrivalsItens>
-               <img src={Img_arrivals1} alt="Blossom Pouch" />
+               <a href="./src/assets/Pages/Product pages/Coach.html">
+                <img src={Img_arrivals1} alt="Blossom Pouch" />
+               </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
                   <img src={Img_like} alt="Like icon" />

@@ -1,5 +1,5 @@
 import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.svg'
-import Img_coach from '../../../assets/Images/Product Page/product-image-coach.png'
+import Img_blackbag from '../../../assets/Images/Product Page/BLACK-BAG_large.png'
 import Img_ratings from '../../../assets/Images/Product Page/Ratings.svg'
 import Icon_less from '../../../assets/Images/Product Page/Vector-mr.svg'
 import Icon_plus from '../../../assets/Images/Product Page/VectorPlus.svg'
@@ -8,16 +8,16 @@ import Icon_bag from '../../../assets/Images/Product Page/bag.svg'
 import Icon_wishlist from '../../../assets/Images/Product Page/wishlist.svg'
 import Img_arrowLeft from '../../../assets/Images/Product Page/chevron-left.svg'
 import Img_arrowRight from '../../../assets/Images/Product Page/chevron-right.svg'
-import Img_coachPreview from '../../../assets/Images/Product Page/Rectangle 520.png'
+import Img_blackPreview from '../../../assets/Images/Product Page/BLACK-BAG_pre.png'
 
 
 import { Div_options, Main_coach, Div_options_Title, Div_options_TitleGray, Div_content, Figure,
    Img_Main, Div_description_product, H1_description_product, P_description_product, Div_ratings,
    P_ratings, Div_prices, P_price, P_priceOriginal, P_priceOFF, Div_details, Div_check, H3_Div_check,
    P_Div_check, Div_apply, P_Div_apply, A_Div_apply, Div_quantity, P_quantity, H4_quantity, Div_PlusorLess,
-   Div_buttons, Btn_Bag, P_BtnBag, Btn_Wish, Div_coachImages } from './mainCoach'
+   Div_buttons, Btn_Bag, P_BtnBag, Btn_Wish, Div_coachImages, Img_blossom_pre } from './mainBlackBag'
 
-function MainCoach() {
+function MainBlackBag() {
     return (
       <Main_coach>
          <Div_options>
@@ -29,18 +29,18 @@ function MainCoach() {
          </Div_options>
          <Div_content>
             <Figure>
-               <Img_Main src={Img_coach} alt="Leathe Coach Bag with adjustable starps" />
+               <Img_Main src={Img_blackbag} alt="Leathe Coach Bag with adjustable starps" />
             </Figure>
             <Div_description_product>
-               <H1_description_product>Coach</H1_description_product>
-               <P_description_product>Leather Coach Bag with adjustable starps.</P_description_product>
+               <H1_description_product>Boujee</H1_description_product>
+               <P_description_product>Black Bag.</P_description_product>
                <Div_ratings>
                   <img src={Img_ratings} alt="Ratings" />
                   <P_ratings>(250) Ratings</P_ratings>
                </Div_ratings>
                <Div_prices>
-                  <P_price>$54.69</P_price>
-                  <P_priceOriginal>$78.66</P_priceOriginal>
+                  <P_price>$56.49</P_price>
+                  <P_priceOriginal>$112.98</P_priceOriginal>
                   <P_priceOFF>50%OFF</P_priceOFF>
                </Div_prices>
                <Div_details>
@@ -77,14 +77,14 @@ function MainCoach() {
          </Div_content>
          <Div_coachImages>
             <img src={Img_arrowLeft} alt="Left arrow Icon" />
-            <img src={Img_coachPreview} alt="front Coach image" />
-            <img src={Img_coachPreview} alt="front Coach image" />
-            <img src={Img_coachPreview} alt="front Coach image" />
-            <img src={Img_coachPreview} alt="front Coach image" />
+            <Img_blossom_pre src={Img_blackPreview} alt="front Black bag image" />
+            <Img_blossom_pre src={Img_blackPreview} alt="front Black bag image" />
+            <Img_blossom_pre src={Img_blackPreview} alt="front Black bag image" />
+            <Img_blossom_pre src={Img_blackPreview} alt="front Black bag image" />
             <img src={Img_arrowRight} alt="right arrow icon" />
          </Div_coachImages>
       </Main_coach>
     )
   }
   
-  export default MainCoach
+  export default MainBlackBag

@@ -56,7 +56,9 @@ function NewArrivals() {
             </ArrivalsItens>
 
             <ArrivalsItens>
-               <img src={Img_arrivals4} alt="Blossom Pouch" />
+               <a href="./src/assets/Pages/Product pages/BlackBag.html">
+                  <img src={Img_arrivals4} alt="Black Bag" />
+               </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Boujee</ArrivalsItensh4 >
                   <img src={Img_like} alt="Like icon" />

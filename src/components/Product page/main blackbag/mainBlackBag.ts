@@ -39,6 +39,7 @@ export const Figure = styled.figure`
 
 export const Img_Main = styled.img`
     width: 100%;
+    border-radius: 16px;
 `
 
 export const Div_description_product = styled.div`
@@ -196,6 +197,7 @@ export const Btn_Bag = styled.button`
     border: none;
     background: #1B4B66;
     color: #FFFFFF;
+    cursor:pointer;
 
 `
 
@@ -215,6 +217,7 @@ export const Btn_Wish = styled.button`
     border-radius: 8px;
     border: 2px solid #1B4B66;
     color: #1B4B66;
+    cursor: pointer;
 
 `
 
@@ -226,4 +229,9 @@ export const Div_coachImages = styled.div`
     margin-left: 2rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
+`
+
+export const Img_blossom_pre = styled.img`
+    width: 14%;
+    border-radius: 8px;
 `

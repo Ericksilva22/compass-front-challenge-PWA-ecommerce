@@ -1,23 +1,23 @@
-import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.svg'
-import Img_banner from '../../../assets/Images/Category page/hero.png'
-import Icon_plus from '../../../assets/Images/Category page/plus.svg'
-import Icon_less from '../../../assets/Images/Category page/less.svg'
-import Img_Blossom from '../../../assets/Images/Category page/image-grande.svg'
-import Img_BrownBag from '../../../assets/Images/Category page/image-remus.png'
-import Img_Coach from '../../../assets/Images/Category page/image-coach.png'
-import Img_BlackBag from '../../../assets/Images/Category page/image-boujee.png'
-import Img_like from '../../../assets/Images/Category page/wishlist.svg'
-import Img_star from '../../../assets/Images/Category page/star.svg'
-import Img_grid from '../../../assets/Images/Category page/grid.svg'
-import Img_sort from '../../../assets/Images/Category page/sort.svg'
+import arrow_nav from '../../../../assets/Images/Product Page/chevron-right-small.svg'
+import Img_banner from '../../../../assets/Images/Category page/hero.png'
+import Icon_plus from '../../../../assets/Images/Category page/plus.svg'
+import Icon_less from '../../../../assets/Images/Category page/less.svg'
+import Img_Blossom from '../../../../assets/Images/Category page/image-grande.svg'
+import Img_BrownBag from '../../../../assets/Images/Category page/image-remus.png'
+import Img_Coach from '../../../../assets/Images/Category page/image-coach.png'
+import Img_BlackBag from '../../../../assets/Images/Category page/image-boujee.png'
+import Img_like from '../../../../assets/Images/Category page/wishlist.svg'
+import Img_star from '../../../../assets/Images/Category page/star.svg'
+import Img_grid from '../../../../assets/Images/Category page/grid.svg'
+import Img_sort from '../../../../assets/Images/Category page/sort.svg'
 
 
 import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Div_options_TitleGray, 
    H1_main, Section_content, Side_menu, Div_side, Title_side, Less_side, Label_Side, Section_options,
    ArrivalsItens, DivArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP,Div_prices,   
    ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF, Img_options,
-   P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, H5_selectPage,
-   Div_pages, Div_next, H5_selectPage_actived, H6_next} from './mainHandbags'
+   P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage,
+   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainHandbags'
 
 function MainHandbags() {
     return (
@@ -26,7 +26,7 @@ function MainHandbags() {
             <Content_banner src={Img_banner} alt="70% OFF BLACK FRIDAY" />
          </Figure_banner>
          <Div_options>
-            <Div_options_Title href="../../../../index.html">Home</Div_options_Title>
+            <Div_options_Title href="../../../../../index.html">Home</Div_options_Title>
             <img src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>Handbag</Div_options_TitleGray>
          </Div_options>
@@ -129,7 +129,7 @@ function MainHandbags() {
                      <Option_show value="price">Price</Option_show>
                   </Select_show>
                </Section_options>
-               <DivArrivalsItens>
+               <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
                      <a href="../Product pages/Blossom.html">
                         <img src={Img_Blossom} alt="Blossom Pouch" />
@@ -187,7 +187,7 @@ function MainHandbags() {
                   </ArrivalsItens>
                </DivArrivalsItens>
 
-               <DivArrivalsItens>
+               <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
                      <a href="../Product pages/Blossom.html">
                         <Card_img src={Img_BlackBag} alt="Blossom Pouch" />
@@ -249,7 +249,7 @@ function MainHandbags() {
                   </ArrivalsItens>
                </DivArrivalsItens>
 
-               <DivArrivalsItens>
+               <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
                      <a href="../Product pages/Blossom.html">
                         <img src={Img_Blossom} alt="Blossom Pouch" />
@@ -317,14 +317,14 @@ function MainHandbags() {
          </Section_content>
          <Section_selectPage>
             <Div_pages>
-               <H5_selectPage_actived>1</H5_selectPage_actived>
-               <H5_selectPage>2</H5_selectPage>
-               <H5_selectPage>3</H5_selectPage>
-               <H5_selectPage>4</H5_selectPage>
-               <H5_selectPage>5</H5_selectPage>
+               <Link_selectPage href='./handbagsPage1.html'>1</Link_selectPage>
+               <Link_selectPage href='./handbagsPage2.html'>2</Link_selectPage>
+               <Link_selectPage href='./handbagsPage3.html'>3</Link_selectPage>
+               <Link_selectPage href='./handbagsPage4.html'>4</Link_selectPage>
+               <Link_selectPage_actived  href='#'>5</Link_selectPage_actived >
             </Div_pages> 
             <Div_next>
-               <H6_next>Next</H6_next>
+               <Link_next href='#'>Next</Link_next>
             </Div_next>
 
          </Section_selectPage>

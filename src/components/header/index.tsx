@@ -15,7 +15,7 @@ function Header() {
          <HeaderNav>
             <UlNav className="nav__ul">
                <Li>
-                  <LinksLi href="./src/assets/Pages/Category pages/handbags.html">
+                  <LinksLi href="./src/assets/Pages/Category pages/handbags/handbagsPage1.html">
                      Handbags
                   </LinksLi>
                   

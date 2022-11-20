@@ -154,6 +154,14 @@ export const DivArrivalsItens = styled.div`
     margin-bottom: 4rem;
 ` 
 
+export const DivArrivalsItensTwo = styled.div`
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-bottom: 4rem;
+` 
+
 export const ArrivalsItens = styled.div`
     display: flex;
     flex-direction: column;
@@ -248,21 +256,24 @@ export const Div_next = styled.div`
     justify-content: center;
 `
 
-export const H6_next = styled.h6 `
+export const Link_next = styled.a `
     font-weight: 500;
     font-size: 0.8rem;
     color: #626262;
+    text-decoration: none;
 `
 
-export const H5_selectPage = styled.h5`
+export const Link_selectPage = styled.a`
     padding: 0.8rem 1.6rem;
     color: #626262;
     border-radius:12px;
+    text-decoration: none;
 `
 
-export const H5_selectPage_actived = styled.h5`
+export const Link_selectPage_actived = styled.a`
     padding: 0.8rem 1.6rem;
     background: #1B4B66;
     color: #FFFFFF;
     border-radius:12px;
+    text-decoration: none;
 `

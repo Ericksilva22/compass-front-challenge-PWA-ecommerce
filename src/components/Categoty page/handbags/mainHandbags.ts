@@ -74,6 +74,55 @@ export const Label_Side = styled.label`
     color: #626262;
 `
 
+export const Section_options = styled.section`
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+`
+
+export const Img_options = styled.img`
+    margin-left: 0.2rem;
+    margin-right: 0.4rem;
+`
+export const P_show_items = styled.p`
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 14rem;
+    color: #171520;
+`
+
+export const P_sort = styled.p`
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 2rem;
+    color: #171520;
+`
+
+export const Span_show = styled.span`
+    background-color: #F1F1F1;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: #626262;
+    margin-right: 8rem;
+`
+
+export const Select_show = styled.select`
+    background: #F1F1F1;
+    border-radius: 4px;
+    border: none;
+    padding: 0.8rem 2rem;
+    color: #626262;
+    font-weight: 500;
+    font-size: 0.8rem;
+    
+`
+
+export const Option_show = styled.option`
+    color: #626262;
+    font-weight: 500;
+`
+
 export const ArrivalsTitle = styled.h1`
     font-size: 2.125rem;
     font-weight: 600;
@@ -175,4 +224,45 @@ export const P_priceOFF = styled.p`
     font-size: 1rem;
     color: #FF404B;
     margin-left: 0.8rem;
+`
+
+export const Section_selectPage = styled.section`
+    display: flex;
+    width: 52%;
+`
+export const Div_pages = styled.div`
+    border-radius:12px;
+    background-color: #F1F1F1;
+    width: 55%;
+    display: flex;
+    margin-left: 17rem;
+`
+
+export const Div_next = styled.div`
+    border-radius:12px;
+    background-color: #F1F1F1;
+    width: 15%;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const H6_next = styled.h6 `
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #626262;
+`
+
+export const H5_selectPage = styled.h5`
+    padding: 0.8rem 1.6rem;
+    color: #626262;
+    border-radius:12px;
+`
+
+export const H5_selectPage_actived = styled.h5`
+    padding: 0.8rem 1.6rem;
+    background: #1B4B66;
+    color: #FFFFFF;
+    border-radius:12px;
 `

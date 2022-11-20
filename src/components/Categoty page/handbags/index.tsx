@@ -8,11 +8,16 @@ import Img_Coach from '../../../assets/Images/Category page/image-coach.png'
 import Img_BlackBag from '../../../assets/Images/Category page/image-boujee.png'
 import Img_like from '../../../assets/Images/Category page/wishlist.svg'
 import Img_star from '../../../assets/Images/Category page/star.svg'
+import Img_grid from '../../../assets/Images/Category page/grid.svg'
+import Img_sort from '../../../assets/Images/Category page/sort.svg'
+
 
 import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Div_options_TitleGray, 
-   H1_main, Section_content, Side_menu, Div_side, Title_side, Less_side, Label_Side,
+   H1_main, Section_content, Side_menu, Div_side, Title_side, Less_side, Label_Side, Section_options,
    ArrivalsItens, DivArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP,Div_prices,   
-   ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF  } from './mainHandbags'
+   ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF, Img_options,
+   P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, H5_selectPage,
+   Div_pages, Div_next, H5_selectPage_actived, H6_next} from './mainHandbags'
 
 function MainHandbags() {
     return (
@@ -113,6 +118,17 @@ function MainHandbags() {
                </Div_side>
             </Side_menu>
             <Section_cards>
+               <Section_options>
+                  <img src={Img_grid} alt="Grid Icon" />
+                  <Img_options src={Img_sort} alt="Grid Icon" />
+                  <P_show_items>Showing 1 - 40 of 145 items</P_show_items>
+                  <P_sort>To Show: <Span_show>9</Span_show></P_sort>
+                  <P_sort>Sort By</P_sort>
+                  <Select_show id="filter">
+                     <Option_show defaultChecked value="position">Position</Option_show>
+                     <Option_show value="price">Price</Option_show>
+                  </Select_show>
+               </Section_options>
                <DivArrivalsItens>
                   <ArrivalsItens>
                      <a href="../Product pages/Blossom.html">
@@ -297,8 +313,21 @@ function MainHandbags() {
                   </ArrivalsItens>
                </DivArrivalsItens>
             </Section_cards>
-         </Section_content>
          
+         </Section_content>
+         <Section_selectPage>
+            <Div_pages>
+               <H5_selectPage_actived>1</H5_selectPage_actived>
+               <H5_selectPage>2</H5_selectPage>
+               <H5_selectPage>3</H5_selectPage>
+               <H5_selectPage>4</H5_selectPage>
+               <H5_selectPage>5</H5_selectPage>
+            </Div_pages> 
+            <Div_next>
+               <H6_next>Next</H6_next>
+            </Div_next>
+
+         </Section_selectPage>
       </Main>
     )
   }

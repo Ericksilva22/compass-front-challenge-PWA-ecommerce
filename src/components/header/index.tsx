@@ -4,7 +4,7 @@ import Icon_profile from '../../assets/Images/Home Page/profile.svg'
 import Icon_bag from '../../assets/Images/Home Page/Fill=False.svg'
 import Icon_search from '../../assets/Images/Home Page/search.svg'
 
-import { Li, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon } from './header'
+import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon } from './header'
 
 function Header() {
     return (
@@ -15,7 +15,10 @@ function Header() {
          <HeaderNav>
             <UlNav className="nav__ul">
                <Li>
-                  Handbags
+                  <LinksLi href="./src/assets/Pages/Category pages/handbags.html">
+                     Handbags
+                  </LinksLi>
+                  
                </Li>
                <Li>
                   Watches

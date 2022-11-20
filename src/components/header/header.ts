@@ -62,6 +62,11 @@ export const SearchIcon = styled.img`
     right: 22.5rem;
 `
 
+export const LinksLi = styled.a`
+    text-decoration: none;
+    color:  #171520;
+`
+
 /*
 export const LiSass = styled<any>(Li)`
 font-size: ${(props)=> props.size};

@@ -67,6 +67,16 @@ export const LinksLi = styled.a`
     color:  #171520;
 `
 
+export const ImgLabel = styled.img`
+    position: relative;
+    right: 1rem;
+    display: none;
+`
+
+export const Img_icon = styled.img`
+    cursor: pointer;
+`
+
 /*
 export const LiSass = styled<any>(Li)`
 font-size: ${(props)=> props.size};

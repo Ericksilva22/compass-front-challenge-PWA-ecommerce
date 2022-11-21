@@ -1,10 +1,11 @@
 import Logo from '../../assets/Images/Home Page/logo.svg'
 import Icon_like from '../../assets/Images/Home Page/wishlist.svg'
 import Icon_profile from '../../assets/Images/Home Page/profile.svg'
-import Icon_bag from '../../assets/Images/Home Page/Fill=False.svg'
+import Icon_bag from '../../assets/Images/Home Page/bag_new.svg'
+import Label from '../../assets/Images/Home Page/label.svg'
 import Icon_search from '../../assets/Images/Home Page/search.svg'
 
-import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon } from './header'
+import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon, ImgLabel, Img_icon } from './header'
 
 function Header() {
     return (
@@ -41,7 +42,8 @@ function Header() {
          <Headericons>
             <img src={Icon_like} alt="Wishlist icon" />
             <img src={Icon_profile} alt="Profile icon" />
-            <img src={Icon_bag} alt="Bag icon" />
+            <Img_icon src={Icon_bag} alt="Bag icon" />
+            <ImgLabel id='label_bag' src={Label} alt="Bag icon" />
          </Headericons>
       </Headerhome>
 

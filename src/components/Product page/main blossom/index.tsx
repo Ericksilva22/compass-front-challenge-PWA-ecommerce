@@ -17,7 +17,16 @@ import { Div_options, Main_coach, Div_options_Title, Div_options_TitleGray, Div_
    P_Div_check, Div_apply, P_Div_apply, A_Div_apply, Div_quantity, P_quantity, H4_quantity, Div_PlusorLess,
    Div_buttons, Btn_Bag, P_BtnBag, Btn_Wish, Div_coachImages, Img_blossom_pre } from './mainBlossom'
 
+
+
 function MainBlossom() {
+
+   function sendBag(){
+      const label_bag = document.querySelector<HTMLElement>('#label_bag')!;
+      label_bag.style.display = "block";
+   }
+
+
     return (
       <Main_coach>
          <Div_options>
@@ -63,7 +72,7 @@ function MainBlossom() {
                </Div_quantity>
                <img src={Img_Off} alt="Get up to 30% off on order" />
                <Div_buttons>
-                  <Btn_Bag>
+                  <Btn_Bag onClick={sendBag}>
                      <img src={Icon_bag} alt="Add to bag button" />
                      <P_BtnBag>Add to bag</P_BtnBag>
                   </Btn_Bag>

@@ -196,7 +196,7 @@ export const Btn_Bag = styled.button`
     border: none;
     background: #1B4B66;
     color: #FFFFFF;
-
+    
 `
 
 export const P_BtnBag = styled.p`

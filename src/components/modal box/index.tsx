@@ -7,17 +7,24 @@ import Img_back from '../../assets/Images/Home Page/leading-icon.svg'
 
 
 import { Fade, Modal_container, Div_back, H2_back, Div_card_flex, Div_title, H3_title, P_title, Div_flex, Div_quantity,
-   Div_prices, Div_description, H5_prices, Div_apply, P_Div_apply, A_Div_apply, Btn_Order, P_BtnOrder, P_continue } from './modal'
+   Div_prices, Div_description, H5_prices, Div_apply, P_Div_apply, A_Div_apply, Btn_Order, P_BtnOrder, P_continue, Img_pointer } from './modal'
 
 
 function Modal() {
 
+   function closeModal(){
+      const modal = document.querySelector<HTMLElement>('#modal_container')!;
+      const fade = document.querySelector<HTMLElement>('#fade')!;
+      modal.style.display = "none";
+      fade.style.display = "none";
+   }
+
     return (
          <section>
-            <Fade></Fade>
-            <Modal_container>
+            <Fade id='fade'></Fade>
+            <Modal_container id='modal_container'>
               <Div_back>
-               <img src={Img_back } alt="" />
+               <Img_pointer onClick={closeModal} src={Img_back } alt="" />
                <H2_back>Back</H2_back>
               </Div_back>
 

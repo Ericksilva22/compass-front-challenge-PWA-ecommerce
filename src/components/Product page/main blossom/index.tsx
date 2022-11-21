@@ -24,6 +24,7 @@ function MainBlossom() {
    function sendBag(){
       const label_bag = document.querySelector<HTMLElement>('#label_bag')!;
       label_bag.style.display = "block";
+      
    }
 
 

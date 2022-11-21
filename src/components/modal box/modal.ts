@@ -8,7 +8,7 @@ export const Fade = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 5;
-    
+    display: none;
 `
 
 export const Modal_container = styled.div`
@@ -28,6 +28,7 @@ export const Modal_container = styled.div`
     opacity: 1;
     pointer-events: all;
     background-color: #FFFFFF;
+    display: none;
 `
 
 export const Div_back = styled.div`
@@ -39,6 +40,7 @@ export const Div_card_flex = styled.div`
     width:85%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding-bottom: 2rem;
+    margin-top: 2rem;
 `
 
 export const Div_description = styled.div`
@@ -131,7 +133,7 @@ export const Btn_Order = styled.button`
     width:100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
-
+    cursor: pointer;
 `
 
 export const P_BtnOrder = styled.p`
@@ -146,5 +148,9 @@ export const P_continue = styled.p`
     text-align: center;
     margin-bottom: 1rem;
     text-decoration-line: underline;
+    cursor: pointer;
+`
 
+export const Img_pointer = styled.img`
+    cursor: pointer;
 `

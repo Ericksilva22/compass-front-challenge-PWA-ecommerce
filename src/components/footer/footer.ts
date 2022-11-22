@@ -13,6 +13,7 @@ export const Footer_content = styled.footer`
     @media (max-width:425px) {
         flex-direction: column;
         display: none;
+        padding-bottom: 4rem;
     }
 
     @media (max-width:375px) {

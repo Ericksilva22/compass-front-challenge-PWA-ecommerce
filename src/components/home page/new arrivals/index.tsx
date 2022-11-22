@@ -6,7 +6,7 @@ import Img_arrow  from '../../../assets/Images/Home Page/arrivals_arrow.svg'
 import Img_like  from '../../../assets/Images/Home Page/like_icon.svg'
 
 
-import { SectionArrivals, ArrivalsTitle, DivTitle, Arrivalsh3, DivArrivals, DivArrivalsItens, ArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP, ArrivalsItensPrice  } from './arrivals'
+import { SectionArrivals, ArrivalsTitle, DivTitle, Arrivalsh3, DivArrivals, DivArrivalsItens, ArrivalsItens, ArrivalsItensName, Icon_like,  ArrivalsItensh4, ArrivalsItensP, ArrivalsItensPrice, Img_width  } from './arrivals'
 
 function NewArrivals() {
    return (
@@ -21,11 +21,11 @@ function NewArrivals() {
          <DivArrivalsItens>
             <ArrivalsItens>
                <a href="./src/assets/Pages/Product pages/Blossom.html">
-                <img src={Img_arrivals1} alt="Blossom Pouch" />
+                <Img_width src={Img_arrivals1} alt="Blossom Pouch" />
                </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
-                  <img src={Img_like} alt="Like icon" />
+                  <Icon_like src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
                <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
                <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
@@ -33,11 +33,11 @@ function NewArrivals() {
 
             <ArrivalsItens>
                <a href="./src/assets/Pages/Product pages/Coach.html">
-                  <img src={Img_arrivals2} alt="Leather Coach Bag" />
+                  <Img_width src={Img_arrivals2} alt="Leather Coach Bag" />
                </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
-                  <img src={Img_like} alt="Like icon" />
+                  <Icon_like src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
                <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
                <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
@@ -45,11 +45,11 @@ function NewArrivals() {
 
             <ArrivalsItens>
                <a href="./src/assets/Pages/Product pages/BrownBag.html">
-                  <img src={Img_arrivals3} alt="Brown bag" />
+                  <Img_width src={Img_arrivals3} alt="Brown bag" />
                </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
-                  <img src={Img_like} alt="Like icon" />
+                  <Icon_like src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
                <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
                <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
@@ -57,11 +57,11 @@ function NewArrivals() {
 
             <ArrivalsItens>
                <a href="./src/assets/Pages/Product pages/BlackBag.html">
-                  <img src={Img_arrivals4} alt="Black Bag" />
+                  <Img_width src={Img_arrivals4} alt="Black Bag" />
                </a>
                <ArrivalsItensName>
                   <ArrivalsItensh4 >Boujee</ArrivalsItensh4 >
-                  <img src={Img_like} alt="Like icon" />
+                  <Icon_like src={Img_like} alt="Like icon" />
                </ArrivalsItensName>
                <ArrivalsItensP>Black BAG</ArrivalsItensP>
                <ArrivalsItensPrice>$56.49</ArrivalsItensPrice>

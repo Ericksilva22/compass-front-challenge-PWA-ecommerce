@@ -6,6 +6,7 @@ import ShopBrands from './components/home page/shop'
 import Footer from './components/footer'
 import NewArrivals from './components/home page/new arrivals'
 import Modal from './components/modal box'
+import Categories from './components/home page/top categories'
 function App() {
   
   return (
@@ -13,6 +14,7 @@ function App() {
      <Header />
      <Modal />
      <Banner />
+     <Categories />
      <NewArrivals />
      <Handpicked />
      <ShopBrands />

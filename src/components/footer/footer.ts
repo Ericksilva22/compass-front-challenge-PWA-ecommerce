@@ -9,6 +9,19 @@ export const Footer_content = styled.footer`
     color: #FFFFFF;
     width: 100%;
     margin-top: -6rem;
+
+    @media (max-width:425px) {
+        flex-direction: column;
+        display: none;
+    }
+
+    @media (max-width:375px) {
+       width:113%;
+    }
+
+    @media (max-width:375px) {
+       width:133%;
+    }
 `
 
 export const ShopCategory = styled.div`
@@ -22,6 +35,9 @@ export const DivLogos = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 23rem;
+    @media (max-width:425px) {
+        margin-left: 0rem;
+    }
 `
 
 export const DivLocation = styled.div`
@@ -30,6 +46,9 @@ export const DivLocation = styled.div`
     margin-top: 2rem;
     margin-bottom: 0.8rem;
     align-items: center;
+    @media (max-width:425px) {
+        justify-content: flex-start;
+    }
 `
 export const Footer_title = styled.h3`
     font-weight: 500;
@@ -48,4 +67,50 @@ export const Footer_links = styled.a`
 export const Img_Logos = styled.img `
     width: 70%;
     margin-left:30%;
+    @media (max-width:425px) {
+        margin-left:0;
+    }
+`
+
+export const DivMore = styled.div`
+    display: none;
+    @media (max-width:425px) {
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        margin-top: -5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width:320px) {
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        margin-top: -5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 120%;
+    }
+`
+
+export const H2_more = styled.h2`
+
+    @media (max-width:425px) {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: #626262;
+    }
+
+`
+
+export const Img_more_down = styled.img`
+
+`
+
+export const Img_more_up = styled.img`
+    display: none;
+
 `

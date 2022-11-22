@@ -190,3 +190,15 @@ export const Div_faceapp = styled.div`
     margin-bottom: 4rem;
 `
 
+export const Img_shotcut = styled.img`
+    display: none;
+    @media (max-width:425px) {
+        display: block;
+        width:88%;
+        margin-top: -6rem;
+        margin-bottom:7rem;
+        border-radius: 12px;
+        margin-left: 1rem;
+    }  
+
+`

@@ -9,47 +9,69 @@ import Img_skincare from '../../../assets/Images/Home Page/Group 139.png'
 import Img_Facepacks from '../../../assets/Images/Home Page/shop_img2.png'
 import Img_arrow1 from '../../../assets/Images/Home Page/shop_arrow1.svg'
 import Img_arrow2 from '../../../assets/Images/Home Page/shop_arrow2.svg'
+import Img_shortcut from '../../../assets/Images/Home Page/PWA-CTA-mobile.png'
 
 
-import { SectionHand, Shoph1, DivBrands, FigureShop, ImgLifestyle, DivSkin_Face, Skin_img, Skin_p, Skin_Arrow1, Face_p   } from './shop'
+
+import { SectionHand, Shoph1, DivBrands, FigureShop, ImgLifestyle, Shoph3, Shoph2,  DivSkin_Face, Skin_img, FigureShotcurt, ImgShotcurt,  Skin_p, Skin_Arrow1, Face_p, Div_flex, Img_flex, Div_faceapp   } from './shop'
 
 function ShopBrands() {
    return (
       <SectionHand>
          <Shoph1>Shop by Brands</Shoph1>
          <DivBrands>
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_zara} alt="Buy Zara" />
-            </a>
 
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_DG} alt="BUY D&G" />
-            </a>
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_zara} alt="Buy Zara" />
+               </a>
+            </Div_flex>
 
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_HM} alt="Buy H&M" />
-            </a>
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_DG} alt="BUY D&G" />
+               </a>
+            </Div_flex>
+            
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_HM} alt="Buy H&M" />
+               </a>
+            </Div_flex>
 
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_channel} alt="Buy channel" />
-            </a>
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_channel} alt="Buy channel" />
+               </a>
+            </Div_flex>
 
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_prada} alt="Buy prada" />
-            </a>
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_prada} alt="Buy prada" />
+               </a>
+            </Div_flex>
 
-            <a href="./src/assets/Pages/page404.html">
-               <img src={Img_biba} alt="Buy BIBA" />
-            </a>
+            <Div_flex>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_flex src={Img_biba} alt="Buy BIBA" />
+               </a>
+            </Div_flex>
+
          </DivBrands>
+
+         <FigureShotcurt>
+            <a href="./src/assets/Pages/page404.html">
+               <ImgShotcurt src={Img_shortcut} alt="Look makeup accessories" />
+            </a>
+         </FigureShotcurt>
+         <Shoph2>Makeup & Skincare</Shoph2>
          <FigureShop>
             <a href="./src/assets/Pages/page404.html">
                <ImgLifestyle src={Img_Lifestyle} alt="Look makeup accessories" />
             </a>
-            
          </FigureShop>
          <DivSkin_Face >
-            <div>
+            <Div_faceapp>
                <Skin_img src={Img_skincare} alt="Skincare Essentials" />
                <Skin_p>
                   Skincare <br /> Essentials
@@ -58,9 +80,9 @@ function ShopBrands() {
                   <Skin_Arrow1 src={Img_arrow1} alt="Arrow icon" />
                </a>
                
-            </div>
+            </Div_faceapp>
 
-            <div>
+            <Div_faceapp>
                <Skin_img src={Img_Facepacks} alt="Skincare Essentials" />
                <Face_p>
                   Facepacks<br /> & Peels
@@ -68,9 +90,10 @@ function ShopBrands() {
                <a href="./src/assets/Pages/page404.html">
                   <Skin_Arrow1 src={Img_arrow2} alt="Arrow icon" />
                </a>
-               
-            </div>
+            </Div_faceapp>
+            
          </DivSkin_Face >
+         <Shoph3>Trending Deals</Shoph3>
       </SectionHand>
    )
 }

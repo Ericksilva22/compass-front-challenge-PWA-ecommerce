@@ -7,6 +7,11 @@ export const Headerhome = styled.div`
 `
 
 export const Div_desktop = styled.div`
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
      @media (max-width:425px) {
         display: none;
     }

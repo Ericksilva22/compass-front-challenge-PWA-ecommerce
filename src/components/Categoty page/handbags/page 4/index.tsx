@@ -131,7 +131,7 @@ function MainHandbags() {
                </Section_options>
                <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
-                     <a href="../Product pages/Blossom.html">
+                     <a href="../../Product pages/Blossom.html">
                         <img src={Img_Blossom} alt="Blossom Pouch" />
                      </a>
                      <ArrivalsItensName>
@@ -151,7 +151,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/Coach.html">
+                     <a href="../../Product pages/Coach.html">
                         <Card_img src={Img_Coach} alt="Leather Coach Bag" />
                      </a>
                      <ArrivalsItensName>
@@ -171,7 +171,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/BrownBag.html">
+                     <a href="../../Product pages/BrownBag.html">
                         <Card_img src={Img_BrownBag} alt="Brown bag" />
                      </a>
                      <ArrivalsItensName>
@@ -189,7 +189,7 @@ function MainHandbags() {
 
                <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
-                     <a href="../Product pages/Blossom.html">
+                     <a href="../../Product pages/BlackBag.html">
                         <Card_img src={Img_BlackBag} alt="Blossom Pouch" />
                      </a>
                      <ArrivalsItensName>
@@ -209,7 +209,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/Coach.html">
+                     <a href="../../Product pages/Coach.html">
                         <Card_img src={Img_Coach} alt="Leather Coach Bag" />
                      </a>
                      <ArrivalsItensName>
@@ -229,7 +229,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/BrownBag.html">
+                     <a href="../../Product pages/BrownBag.html">
                         <Card_img src={Img_BrownBag} alt="Brown bag" />
                      </a>
                      <ArrivalsItensName>
@@ -251,7 +251,7 @@ function MainHandbags() {
 
                <DivArrivalsItens className='Itens_one'>
                   <ArrivalsItens>
-                     <a href="../Product pages/Blossom.html">
+                     <a href="../../Product pages/Blossom.html">
                         <img src={Img_Blossom} alt="Blossom Pouch" />
                      </a>
                      <ArrivalsItensName>
@@ -272,7 +272,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/Coach.html">
+                     <a href="../../Product pages/Coach.html">
                         <Card_img src={Img_Coach} alt="Leather Coach Bag" />
                      </a>
                      <ArrivalsItensName>
@@ -293,7 +293,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/BrownBag.html">
+                     <a href="../../Product pages/BrownBag.html">
                         <Card_img src={Img_BrownBag} alt="Brown bag" />
                      </a>
                      <ArrivalsItensName>

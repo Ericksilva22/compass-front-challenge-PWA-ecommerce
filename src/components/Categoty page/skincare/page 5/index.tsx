@@ -17,9 +17,9 @@ import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Di
    ArrivalsItens, DivArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP,Div_prices,   
    ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF, Img_options,
    P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage,
-   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainHandbags'
+   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainSkincare'
 
-function MainHandbags() {
+function MainSkincare() {
     return (
       <Main>
          <Figure_banner>
@@ -332,4 +332,4 @@ function MainHandbags() {
     )
   }
   
-  export default MainHandbags
+  export default MainSkincare

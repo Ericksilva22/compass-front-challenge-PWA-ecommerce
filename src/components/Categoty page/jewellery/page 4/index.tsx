@@ -17,9 +17,9 @@ import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Di
    ArrivalsItens, DivArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP,Div_prices,   
    ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF, Img_options,
    P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage,
-   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainHandbags'
+   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainJewellery'
 
-function MainHandbags() {
+function MainJewellery() {
     return (
       <Main>
          <Figure_banner>
@@ -293,7 +293,7 @@ function MainHandbags() {
                   </ArrivalsItens>
 
                   <ArrivalsItens>
-                     <a href="../Product pages/BrownBag.html">
+                     <a href="../../Product pages/BrownBag.html">
                         <Card_img src={Img_BrownBag} alt="Brown bag" />
                      </a>
                      <ArrivalsItensName>
@@ -320,11 +320,11 @@ function MainHandbags() {
                <Link_selectPage href='./handbagsPage1.html'>1</Link_selectPage>
                <Link_selectPage href='./handbagsPage2.html'>2</Link_selectPage>
                <Link_selectPage href='./handbagsPage3.html'>3</Link_selectPage>
-               <Link_selectPage href='./handbagsPage4.html'>4</Link_selectPage>
-               <Link_selectPage_actived  href='#'>5</Link_selectPage_actived >
+               <Link_selectPage_actived  href='#'>4</Link_selectPage_actived >
+               <Link_selectPage href='./handbagsPage5.html'>5</Link_selectPage>
             </Div_pages> 
             <Div_next>
-               <Link_next href='#'>Next</Link_next>
+               <Link_next href='./handbagsPage5.html'>Next</Link_next>
             </Div_next>
 
          </Section_selectPage>
@@ -332,4 +332,4 @@ function MainHandbags() {
     )
   }
   
-  export default MainHandbags
+  export default MainJewellery

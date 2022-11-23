@@ -26,7 +26,9 @@ function Header() {
       <Headerhome>
          <Div_desktop>
             <h1 className="header__h1">
-               <img className="img_logo" src={Logo} alt="Coral" />
+               <a href="">
+                  <img className="img_logo" src={Logo} alt="Coral" />
+               </a>
             </h1>
             <HeaderNav>
                <UlNav className="nav__ul">
@@ -34,19 +36,30 @@ function Header() {
                      <LinksLi href="./src/assets/Pages/Category pages/handbags/handbagsPage1.html">
                         Handbags
                      </LinksLi>
+                  </Li>
+
+                  <Li>
+                     <LinksLi href="./src/assets/Pages/Category pages/watches/watchesPage1.html">
+                        Watches
+                     </LinksLi>
+                  </Li>
+                     
+                  <Li >
+                     <LinksLi href="./src/assets/Pages/Category pages/skincare/skincarePage1.html">
+                        Skincare
+                     </LinksLi>
                      
                   </Li>
-                  <Li>
-                     Watches
+                  <Li >
+                     <LinksLi href="./src/assets/Pages/Category pages/jewellery/jewelleryPage1.html">
+                        Jewellery
+                     </LinksLi>
+                     
                   </Li>
                   <Li >
-                     Skincare
-                  </Li>
-                  <Li >
-                     Jewellery
-                  </Li>
-                  <Li >
-                     Apparels
+                     <LinksLi href="./src/assets/Pages/Category pages/apparels/apparelsPage1.html">
+                        Apparels
+                     </LinksLi>
                   </Li>
                </UlNav>
             </HeaderNav>

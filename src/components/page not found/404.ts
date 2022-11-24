@@ -22,6 +22,9 @@ export const H2 = styled.h2`
    font-size: 3.125rem;
    color: #1B4B66;
    margin-bottom: 0.2rem;
+   @media (max-width: 425px) {
+    font-size: 2.125rem;
+   }
 `
 
 export const P = styled.p`
@@ -29,6 +32,17 @@ export const P = styled.p`
     font-size: 2rem;
     color: #626262;
     margin-bottom: -0.8rem;
+    @media (max-width: 425px) {
+    font-size: 1.125rem;
+   }
+
+   @media (max-width: 375px) {
+    font-size: 1rem;
+   }
+
+   @media (max-width: 320px) {
+    font-size: 0.8rem;
+   }
 `
 
 export const BtnPage404 = styled.button`
@@ -40,6 +54,13 @@ export const BtnPage404 = styled.button`
     background-color: #1B4B66;
     font-size: 0.875rem;
     font-weight: 400;
+    @media (max-width: 425px) {
+        width:40%;
+   }
+
+   @media (max-width: 320px) {
+        width:50%;
+   }
     
 `
 

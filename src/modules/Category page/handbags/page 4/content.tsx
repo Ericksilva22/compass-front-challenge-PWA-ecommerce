@@ -1,7 +1,7 @@
-import Header from '../../../../components/header'
-import Footer from '../../../../components/footer'
+import Header from '../../../../components/Categoty page/header'
+import Footer from '../../../../components/Categoty page/footer'
 import MainHandbags from '../../../../components/Categoty page/handbags/page 4'
-
+import AppBar from '../../../../components/app - bar'
 function ContentCategory() {
   
     return (
@@ -9,6 +9,7 @@ function ContentCategory() {
        <Header />
        <MainHandbags />
        <Footer />
+       <AppBar />
       </div>
     )
   }

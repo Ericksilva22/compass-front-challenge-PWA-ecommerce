@@ -9,23 +9,28 @@ import Icon_wishlist from '../../../assets/Images/Product Page/wishlist.svg'
 import Img_arrowLeft from '../../../assets/Images/Product Page/chevron-left.svg'
 import Img_arrowRight from '../../../assets/Images/Product Page/chevron-right.svg'
 import Img_brownPreview from '../../../assets/Images/Product Page/brownbag_pre.png'
+import Img_ratings_mobile from '../../../assets/Images/Product Page/ratings-mobile.svg'
 
 
 import { Div_options, Main_coach, Div_options_Title, Div_options_TitleGray, Div_content, Figure,
    Img_Main, Div_description_product, H1_description_product, P_description_product, Div_ratings,
    P_ratings, Div_prices, P_price, P_priceOriginal, P_priceOFF, Div_details, Div_check, H3_Div_check,
    P_Div_check, Div_apply, P_Div_apply, A_Div_apply, Div_quantity, P_quantity, H4_quantity, Div_PlusorLess,
-   Div_buttons, Btn_Bag, P_BtnBag, Btn_Wish, Div_coachImages, Img_blossom_pre } from './mainBrownBag'
+   Div_buttons, Btn_Bag, P_BtnBag, Btn_Wish, Div_coachImages, Img_blossom_pre, Icon_arrow, Div_ratings_mobile,
+   Icon_arrow_mobile, P_Wish } from './mainBrownBag'
 
 function MainBrownBag() {
     return (
       <Main_coach>
          <Div_options>
-            <Div_options_Title href="../../../../index.html">Home</Div_options_Title>
-            <img src={arrow_nav} alt="Arrow icon" />
+         <Div_options_Title href="../../../../index.html">Home</Div_options_Title>
+            <Icon_arrow src={arrow_nav} alt="Arrow icon" />
             <Div_options_Title>Handbag</Div_options_Title>
-            <img src={arrow_nav} alt="Arrow icon" />
+            <Icon_arrow src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>Label</Div_options_TitleGray>
+            <a href="../../../../index.html">
+               <Icon_arrow_mobile src={Img_arrowLeft} alt="Arrow icon" />
+            </a>
          </Div_options>
          <Div_content>
             <Figure>
@@ -43,6 +48,9 @@ function MainBrownBag() {
                   <P_priceOriginal>$114.00</P_priceOriginal>
                   <P_priceOFF>50%OFF</P_priceOFF>
                </Div_prices>
+               <Div_ratings_mobile>
+                  <img src={Img_ratings_mobile} alt="" />
+               </Div_ratings_mobile>
                <Div_details>
                   <Div_check>
                      <H3_Div_check>Delivery Details</H3_Div_check>
@@ -70,7 +78,7 @@ function MainBrownBag() {
 
                   <Btn_Wish>
                      <img src={Icon_wishlist} alt="Add to wishilist button" />
-                     <p>Add to Wishlist</p>
+                     <P_Wish>Add to Wishlist</P_Wish>
                   </Btn_Wish>
                </Div_buttons>
             </Div_description_product>

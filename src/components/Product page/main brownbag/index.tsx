@@ -20,6 +20,12 @@ import { Div_options, Main_coach, Div_options_Title, Div_options_TitleGray, Div_
    Icon_arrow_mobile, P_Wish } from './mainBrownBag'
 
 function MainBrownBag() {
+
+   function sendBag(){
+      const label_bag = document.querySelector<HTMLElement>('#label_bag')!;
+      label_bag.style.display = "block";
+      
+   }
     return (
       <Main_coach>
          <Div_options>
@@ -71,7 +77,7 @@ function MainBrownBag() {
                </Div_quantity>
                <img src={Img_Off} alt="Get up to 30% off on order" />
                <Div_buttons>
-                  <Btn_Bag>
+                  <Btn_Bag onClick={sendBag}>
                      <img src={Icon_bag} alt="Add to bag button" />
                      <P_BtnBag>Add to bag</P_BtnBag>
                   </Btn_Bag>

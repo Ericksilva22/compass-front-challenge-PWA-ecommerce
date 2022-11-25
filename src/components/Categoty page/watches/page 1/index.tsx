@@ -29,9 +29,9 @@ function MainWatches() {
          <Div_options>
             <Div_options_Title href="../../../../../index.html">Home</Div_options_Title>
             <img src={arrow_nav} alt="Arrow icon" />
-            <Div_options_TitleGray>Handbag</Div_options_TitleGray>
+            <Div_options_TitleGray>Watches</Div_options_TitleGray>
          </Div_options>
-         <H1_main>Handbags</H1_main>
+         <H1_main>Watches</H1_main>
          <Section_content>
             <Side_menu>
                <Div_side>

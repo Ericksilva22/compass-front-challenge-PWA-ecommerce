@@ -76,8 +76,15 @@ function ProductDescription() {
          </Div_mobile>
 
          <Div_mobile>
-            <Img_invite_mobile src={Img_invite} alt="" />
-            <Img_also_mobile src={Img_alsoLike} alt="" />
+            <a href="../page404.html">
+               <Img_invite_mobile src={Img_invite} alt="" />
+            </a>
+
+            <a href="../page404.html">
+               <Img_also_mobile src={Img_alsoLike} alt="" />
+            </a>
+            
+            
          </Div_mobile>
       </Section_description >
    )

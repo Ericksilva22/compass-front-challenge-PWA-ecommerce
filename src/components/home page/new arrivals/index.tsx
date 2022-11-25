@@ -14,7 +14,9 @@ function NewArrivals() {
          <DivArrivals>
             <ArrivalsTitle>New Arrivals</ArrivalsTitle>
             <DivTitle>
-               <Arrivalsh3>View All</Arrivalsh3>
+               <a href="./src/assets/Pages/page404.html">
+                  <Arrivalsh3>View All</Arrivalsh3>
+               </a>
                <img src={Img_arrow} alt="Arrow icon" />
             </DivTitle>
          </DivArrivals>

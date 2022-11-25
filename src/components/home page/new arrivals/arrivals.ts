@@ -33,6 +33,10 @@ export const DivTitle = styled.div`
     align-items:center;
     width:6.5rem;
 
+    a {
+        text-decoration: none;
+    }
+
 `
 
 export const Arrivalsh3 = styled.h3`

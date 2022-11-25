@@ -2,7 +2,7 @@ import { Component } from 'react'
 import AppBar from '../components/app - bar/index'
 
 export default {
-    title: 'Mobile/AppBar',
+    title: 'Home page/AppBar',
     component: AppBar,
 }
 

@@ -1,14 +1,76 @@
 import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.svg'
 import arrow_nav_up from '../../../assets/Images/Checkout Page/Vector-up.svg'
 import arrow_nav_down from '../../../assets/Images/Checkout Page/Vector-down.svg'
+import Img_UPI from '../../../assets/Images/Checkout Page/UPI-Logo-vector 1.svg'
+import Img_credit from '../../../assets/Images/Checkout Page/Vector-card.svg'
+import Img_amazon from '../../../assets/Images/Checkout Page/image 30.svg'
+import Img_apple from '../../../assets/Images/Checkout Page/image 28.svg'
+import Img_Google from '../../../assets/Images/Checkout Page/Group 660.svg'
+import Img_Pe from '../../../assets/Images/Checkout Page/Group 9884.svg'
+import Img_Paytm from '../../../assets/Images/Checkout Page/Group 9885.svg'
 
 import { Div_options, Div_options_Title, Div_options_TitleGray, H1_main, H2_main, Main, Div_flex,
          Section, Form, H3_main,  Div_flex_form, Div_input, Input, Input_DDNumber, Input_second,
-         Div_flex_next, Link, Button } from './main'
+         Div_flex_next, Link, Button, Img_none, Img_block, Label, Payment_options, Section_payments,
+         Input_radio, Img_creditCard, Label_second, Input_Option_second, Input_text, P_options, Div_none } from './main'
 
 import MainOrder from '../Order'
 
 function MainCheckout() {
+
+   function MoreAdress(){
+      const icon_down = document.querySelector<HTMLElement>("#Icon_down_adress")!;
+      const icon_up = document.querySelector<HTMLElement>("#Icon_up_adress")!;
+
+      const form_adress = document.querySelector<HTMLElement>("#Form_adress")!;
+
+      icon_down.style.display = "block";
+      icon_up.style.display = "none";
+      form_adress.style.display = "none";
+   }
+
+   function CloseAdress(){
+      const icon_down = document.querySelector<HTMLElement>("#Icon_down_adress")!;
+      const icon_up = document.querySelector<HTMLElement>("#Icon_up_adress")!;
+
+      const form_adress = document.querySelector<HTMLElement>("#Form_adress")!;
+
+      icon_down.style.display = "none";
+      icon_up.style.display = "block";
+      form_adress.style.display = "flex";
+      
+   }
+
+
+   function MorePayment(){
+      const icon_down = document.querySelector<HTMLElement>("#Icon_down_payment")!;
+      const icon_up = document.querySelector<HTMLElement>("#Icon_up_payment")!;
+
+      const form_payments = document.querySelector<HTMLElement>("#section_payments")!;
+      const form_payments_options = document.querySelector<HTMLElement>("#section_payment_options")!;
+
+      icon_down.style.display = "none";
+      icon_up.style.display = "block";
+      form_payments.style.display = "none";
+      form_payments_options.style.display = "none";
+
+      
+   }
+
+   function ClosePayment(){
+      const icon_down = document.querySelector<HTMLElement>("#Icon_down_payment")!;
+      const icon_up = document.querySelector<HTMLElement>("#Icon_up_payment")!;
+
+      const form_payments = document.querySelector<HTMLElement>("#section_payments")!;
+      const form_payments_options = document.querySelector<HTMLElement>("#section_payment_options")!;
+
+      icon_down.style.display = "block";
+      icon_up.style.display = "none";
+      form_payments.style.display = "flex";
+      form_payments_options.style.display = "block";
+
+      
+   }
 
     return (
       <Main>
@@ -21,10 +83,11 @@ function MainCheckout() {
             <H1_main>Checkout</H1_main>
             <Div_flex>
                <H2_main>Add New Address</H2_main>
-               <img src={arrow_nav_up} alt="" />
+               <Img_block id='Icon_up_adress' src={arrow_nav_up} alt="" onClick={MoreAdress} />
+               <Img_none id='Icon_down_adress' onClick={CloseAdress}  src={arrow_nav_down} alt="" />
             </Div_flex>
 
-            <Form action="">
+            <Form id='Form_adress' action="">
                < Div_flex_form>
                   <Div_input>
                      <H3_main>Full Name</H3_main>
@@ -63,8 +126,79 @@ function MainCheckout() {
 
             <Div_flex>
                <H2_main>Select Payment Method</H2_main>
-               <img src={arrow_nav_down} alt="" />
+               <img src={arrow_nav_down} id="Icon_down_payment" onClick={MorePayment} alt="" />
+               <Img_none src={arrow_nav_up} id="Icon_up_payment" onClick={ClosePayment} alt="" />
             </Div_flex>
+
+            <Section_payments id="section_payments">
+               <Payment_options >
+                  <Input_radio type="radio" id='UPI' name='payment'  value="UPI" />
+                  <Label htmlFor="UPI">
+                     <img src={Img_UPI} alt="UPI Logo" />
+                     <h5>UPI</h5>
+                  </Label>
+               </Payment_options>
+
+               <Payment_options >
+                  <Input_radio type="radio" id='credit' name='payment' value="credit" />
+                  <Label htmlFor="credit">
+                     <Img_creditCard src={Img_credit} alt="credit card Logo" />
+                     <h5>Credit/Debit Card</h5>
+                  </Label>
+               </Payment_options>
+
+               <Payment_options >
+                  <Input_radio type="radio" id='apple' name='payment'  value="apple" />
+                  <Label htmlFor="apple">
+                     <img src={Img_apple} alt="Apple pay Logo" />
+                     <h5>Apple pay</h5>
+                  </Label>
+               </Payment_options>
+
+               <Payment_options >
+                  <Input_radio type="radio" id='amazon' name='payment' value="amazon" />
+                  <Label htmlFor="amazon">
+                     <img src={Img_amazon} alt="Amazon pay Logo" />
+                     <h5>Amazon pay</h5>
+                  </Label>
+               </Payment_options>
+            </Section_payments>
+            <section id='section_payment_options'>
+               
+               <Label_second htmlFor="google">
+                  <img src={Img_Google} alt="Amazon pay Logo" />
+                  <h5>Google Pay</h5>
+               </Label_second >
+               <Div_none>
+                  <Input_text type="text" placeholder='Enter your UPI Id' />
+                  <P_options>Eg: 123456789@ybl</P_options>
+                  <input type="checkbox" name="save" id="save" value= "s" /> Save this for future transactions
+               </Div_none>
+               <Input_Option_second type="radio" id='google' name='payment-options' value="google" /> 
+
+               <Label_second htmlFor="phone pe">
+                  <img src={Img_Pe} alt="Phone pe Logo" />
+                  <h5>Phone Pe</h5>
+               </Label_second >
+               <Div_none>
+                  <Input_text type="text" placeholder='Enter your UPI Id' />
+                  <P_options>Eg: 123456789@ybl</P_options>
+                  <input type="checkbox" name="save-pe" id="save-pe" value= "s" /> Save this for future transactions
+               </Div_none>
+               <Input_Option_second type="radio" id='google' name='payment-options' value="phonePe" /> 
+
+               <Label_second htmlFor="paytm">
+                  <img src={Img_Paytm} alt="Paytm Logo" />
+                  <h5>Paytm</h5>
+               </Label_second >
+               <Div_none>
+                  <Input_text type="text" placeholder='Enter your UPI Id' />
+                  <P_options>Eg: 123456789@ybl</P_options>
+                  <input type="checkbox" name="save-paytm" id="save-paytm" value= "s" /> Save this for future transactions
+               </Div_none>
+               <Input_Option_second type="radio" id='google' name='payment-options' value="paytm" />
+            </section>
+          
 
             <Div_flex_next>
                <Link href="">Back to cart</Link>

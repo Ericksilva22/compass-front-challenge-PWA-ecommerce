@@ -52,8 +52,6 @@ export const Section = styled.section`
     width:55%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
 `
 
 export const Div_flex = styled.div`
@@ -140,4 +138,100 @@ export const Button = styled.button`
         color:#FFFFFF;
         text-decoration: none;
     }
+`
+
+export const Img_none = styled.img`
+    display: none;
+    cursor: pointer;
+`
+
+export const Img_block = styled.img`
+    cursor: pointer;
+`
+
+export const Section_payments = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+`
+
+export const Payment_options = styled.form`
+    border: 1px solid #E3E3E3;
+    border-radius: 12px;
+    padding: 0.5rem 0.5rem;
+    width: 10rem;
+    height: 7.938rem;
+    
+`
+
+export const Input_radio = styled.input`
+    margin-left: 6rem;
+`
+
+export const Label = styled.label`
+    display: block;
+    cursor: pointer;
+    
+    h5 {
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0.4rem;
+    }
+`
+
+export const Img_creditCard = styled.img`
+    margin-left: 3rem;
+`
+
+export const Label_second = styled(Label)`
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h5 {
+        margin-left: 1rem;
+    }
+`
+
+export const Input_Option_second = styled(Input)`
+    float: right;
+    width:2%;
+    margin-top: -4rem;
+`
+
+export const Input_text = styled.input`
+    border: 1px solid #639599;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 18rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+
+    &::-webkit-input-placeholder{ /* Chrome/opera/Safari */
+        font-weight: 400;
+        font-size: 1rem;
+        color:#B6B6B6; 
+    }
+
+    &::-moz-placeholder{ /* Firefox 19+ */
+        font-weight: 400;
+        font-size: 1rem;
+        color:#B6B6B6;
+    }
+
+
+`
+
+export const P_options = styled.p`
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #A7A7A7;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+`
+
+export const Div_none = styled.div`
+    display: none;
 `

@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const SectionArrivals = styled.section`
     margin-bottom: 2rem;
     margin-top: -20rem;
+    overflow: hidden;
+    
     @media (max-width:375px) {
         width:110%;
     }
@@ -17,6 +19,7 @@ export const DivArrivals = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    
 `
 
 export const ArrivalsTitle = styled.h1`
@@ -53,8 +56,10 @@ export const DivArrivalsItens = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-
+    width: 153%;
+    margin-left: 1rem;
+    cursor: grab;
+    
     @media (max-width:375px) {
         padding-left: 1rem;
     }
@@ -71,6 +76,7 @@ export const ArrivalsItensName = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    width: 90%;
 `
 
 export const ArrivalsItensh4 = styled.h4`
@@ -111,9 +117,8 @@ export const Icon_like = styled.img`
 
 export const Img_width = styled.img`
     @media (max-width:425px) {
-        width: 110%;
+        width: 95%;
     }
-
 `
 
 

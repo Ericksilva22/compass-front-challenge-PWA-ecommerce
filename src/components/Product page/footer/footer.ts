@@ -68,7 +68,7 @@ export const Footer_links = styled.a`
     color: #B6B6B6;
     text-decoration: none;
     margin-bottom: 0.5rem;
-
+    
 `
 
 export const Img_Logos = styled.img `

@@ -118,7 +118,7 @@ function MainCheckout() {
                   </Div_input>
 
                   <Div_input>
-                     <H3_main>City</H3_main>
+                     <H3_main>Pin code</H3_main>
                      <Input_second type="text" placeholder='Enter Pin Code' />
                   </Div_input>
                </ Div_flex_form>

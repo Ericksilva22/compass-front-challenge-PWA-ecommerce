@@ -76,7 +76,7 @@ export const H3_main = styled.h3`
 `
 
 export const Div_flex_form = styled.div`
-    
+
 `
 
 export const Div_input = styled.div`
@@ -106,12 +106,14 @@ export const Input = styled.input`
 `
 
 export const Input_DDNumber = styled(Input)`
-    width: 5rem;
+    width: 4.2rem;
     margin-right: 1.4rem;
+    margin-left: 1rem;
 `
 
 export const Input_second = styled(Input)`
-    width: 24.438rem;
+    width: 23.928rem;
+    margin-left: 0.8rem;
 `
 
 export const Div_flex_next = styled(Div_flex)`

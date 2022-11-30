@@ -54,8 +54,8 @@ export const BannerDivCarry = styled.div`
     border-radius: 24px 0px 0px 24px;
     color: #1B4B66;
     position: relative;
-    top: -24rem;
-    left: 42.3rem;
+    top: -23rem;
+    left: 38.5rem;
 
     @media(max-width:425px){
         width: 52.5%;

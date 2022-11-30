@@ -185,7 +185,7 @@ function MainCheckout() {
                   <P_options>Eg: 123456789@ybl</P_options>
                   <input type="checkbox" name="save-pe" id="save-pe" value= "s" /> Save this for future transactions
                </Div_none>
-               <Input_Option_second type="radio" id='google' name='payment-options' value="phonePe" /> 
+               <Input_Option_second type="radio" id='phone pe' name='payment-options' value="phonePe" /> 
 
                <Label_second htmlFor="paytm">
                   <img src={Img_Paytm} alt="Paytm Logo" />
@@ -196,7 +196,7 @@ function MainCheckout() {
                   <P_options>Eg: 123456789@ybl</P_options>
                   <input type="checkbox" name="save-paytm" id="save-paytm" value= "s" /> Save this for future transactions
                </Div_none>
-               <Input_Option_second type="radio" id='google' name='payment-options' value="paytm" />
+               <Input_Option_second type="radio" id='paytm' name='payment-options' value="paytm" />
             </section>
           
 

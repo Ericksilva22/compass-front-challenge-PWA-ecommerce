@@ -54,7 +54,10 @@ function Modal() {
                   </Div_apply>
 
                   <Btn_Order>
-                     <P_BtnOrder>Place Order</P_BtnOrder>
+                     <a href="./src/assets/Pages/cart.html">
+                        <P_BtnOrder>Place Order</P_BtnOrder>
+                     </a>
+                     
                   </Btn_Order>
                   <P_continue>Continue Shopping</P_continue>
               </Div_prices>

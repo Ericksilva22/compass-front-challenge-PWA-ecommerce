@@ -109,7 +109,7 @@ export const ArrivalsItensPrice = styled.p`
 `
 
 export const Icon_like = styled.img`
-
+    cursor:pointer;
     @media (max-width:425px) {
         width: 20%;
     }
@@ -122,3 +122,6 @@ export const Img_width = styled.img`
 `
 
 
+export const Icon_fill = styled(Icon_like)`
+    display: none;
+`

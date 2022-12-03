@@ -3,6 +3,7 @@ import Footer from '../../../../components/Categoty page/footer'
 import MainHandbags from '../../../../components/Categoty page/handbags/page 1'
 import AppBar from '../../../../components/app - bar'
 import Modal from '../../../../components/modal box'
+import SortModal from '../../../../components/Categoty page/sort - modal box'
 
 function ContentCategory() {
   
@@ -13,6 +14,7 @@ function ContentCategory() {
        <MainHandbags />
        <Footer />
        <AppBar />
+       <SortModal />
       </div>
     )
   }

@@ -25,6 +25,16 @@ import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Di
    Div_pages, Div_next, Link_selectPage_actived, Link_next, Img_arrow_mobile, Div_sort_mobile, DivArrivalsItens_none} from './mainHandbags'
 
 function MainHandbags() {
+
+
+   function displayModal(){
+      const modal = document.querySelector<HTMLElement>('#modal_container-sort')!;
+      const fade = document.querySelector<HTMLElement>('#fade-sort')!;
+      modal.style.display = "block";
+      fade.style.display = "block";
+   }
+
+   
     return (
       <Main>
          <Figure_banner>
@@ -324,7 +334,7 @@ function MainHandbags() {
                </Div_mobile>
             </Section_cards>
          </Section_content>
-         <Div_sort_mobile>
+         <Div_sort_mobile onClick={displayModal}>
             <img src={Img_sort_mobile} alt="" />
          </Div_sort_mobile>
          <Section_selectPage>
@@ -338,7 +348,6 @@ function MainHandbags() {
             <Div_next>
                <Link_next href='./handbagsPage2.html'>Next</Link_next>
             </Div_next>
-
          </Section_selectPage>
       </Main>
     )

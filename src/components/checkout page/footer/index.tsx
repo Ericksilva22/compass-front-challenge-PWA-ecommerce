@@ -35,13 +35,6 @@ function Footer() {
 
     return (
       <section>
-         <DivMore id='div_more'>
-            <H2_more>
-               More about CORA´L
-            </H2_more>
-            <Img_more_down id='more_about_down' onClick={Moreabout}  src={Footer_down} alt="" />
-            <Img_more_up id='more_about_up' onClick={Closeabout} src={Footer_up} alt="" />
-         </DivMore>
          <Footer_content id='footer_content'>
             <ShopCategory>
                <Footer_title>Shop by category</Footer_title>

@@ -36,6 +36,9 @@ export const H1_main = styled.h1`
     margin-bottom: 2rem;
     @media (max-width:425px){
         font-size: 1.125rem;
+        margin-left: 2rem;
+        margin-top: -1.4rem;
+        
     }
 `
 
@@ -60,6 +63,12 @@ export const Div_flex = styled.div`
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     margin-bottom: 1rem;
+
+    @media (max-width: 425px) {
+        width: 180%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 `
 
 export const Form = styled.form`
@@ -67,6 +76,10 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 425px) {
+       flex-direction: column;
+    }
 `
 
 export const H3_main = styled.h3`
@@ -81,6 +94,9 @@ export const Div_flex_form = styled.div`
 
 export const Div_input = styled.div`
     margin-bottom: 1rem;
+    @media (max-width:425px){
+        margin-left: 1rem;
+    }
 `
 
 export const Input = styled.input`
@@ -103,17 +119,28 @@ export const Input = styled.input`
         color:#626262;
     }
 
+    @media (max-width:425px){
+       width: 180%;
+    }
+
 `
 
 export const Input_DDNumber = styled(Input)`
     width: 4.2rem;
     margin-right: 1.4rem;
     margin-left: 1rem;
+    @media (max-width:425px){
+       display: none;
+    }
 `
 
 export const Input_second = styled(Input)`
     width: 23.928rem;
     margin-left: 0.8rem;
+    @media (max-width:425px){
+       width: 180%;
+       margin-left: 0rem;
+    }
 `
 
 export const Div_flex_next = styled(Div_flex)`
@@ -124,6 +151,10 @@ export const Link = styled.a`
     font-weight: 600;
     font-size: 0.875rem;
     color: #1B4B66;
+
+    @media (max-width:425px){
+        display: none;
+    }
 `
 
 export const Button = styled.button`
@@ -140,6 +171,10 @@ export const Button = styled.button`
         color:#FFFFFF;
         text-decoration: none;
     }
+
+    @media (max-width:425px) {
+        width:388px;
+    }
 `
 
 export const Img_none = styled.img`
@@ -151,11 +186,25 @@ export const Img_block = styled.img`
     cursor: pointer;
 `
 
+export const Img_arrow_mobile = styled.img`
+    display: none;
+
+    @media (max-width: 425px){
+        display: inline-block;
+        margin-left: 1rem;
+    }
+`
+
 export const Section_payments = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+
+    @media (max-width:425px){
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 export const Payment_options = styled.form`
@@ -164,6 +213,11 @@ export const Payment_options = styled.form`
     padding: 0.5rem 0.5rem;
     width: 10rem;
     height: 7.938rem;
+
+    @media (max-width:425px){
+       margin-left: 10rem;
+       margin-bottom: 1rem;
+    }
     
 `
 
@@ -201,6 +255,11 @@ export const Input_Option_second = styled(Input)`
     float: right;
     width:2%;
     margin-top: -4rem;
+
+    @media (max-width:425px) {
+        width:10%;
+        margin-right: -10rem;
+    }
 `
 
 export const Input_text = styled.input`
@@ -236,4 +295,11 @@ export const P_options = styled.p`
 
 export const Div_none = styled.div`
     display: none;
+    margin-bottom: 1rem;
+
+    h4 {
+        color: #626262;
+        font-size: 0.875rem;
+        display: inline;
+    }
 `

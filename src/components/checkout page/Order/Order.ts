@@ -4,6 +4,10 @@ export const Aside = styled.aside`
     margin-top: 9rem;
     margin-left: 12rem;
     width:30%;
+
+    @media (max-width:425px) {
+        display:none;
+    }
 `
 
 export const H1_order = styled.h1`

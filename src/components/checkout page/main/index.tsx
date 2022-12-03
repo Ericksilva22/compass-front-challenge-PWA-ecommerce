@@ -1,6 +1,7 @@
 import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.svg'
 import arrow_nav_up from '../../../assets/Images/Checkout Page/Vector-up.svg'
 import arrow_nav_down from '../../../assets/Images/Checkout Page/Vector-down.svg'
+import arrow_nav_left from '../../../assets/Images/Checkout Page/Vector-left.svg'
 import Img_UPI from '../../../assets/Images/Checkout Page/UPI-Logo-vector 1.svg'
 import Img_credit from '../../../assets/Images/Checkout Page/Vector-card.svg'
 import Img_amazon from '../../../assets/Images/Checkout Page/image 30.svg'
@@ -12,7 +13,7 @@ import Img_Paytm from '../../../assets/Images/Checkout Page/Group 9885.svg'
 import { Div_options, Div_options_Title, Div_options_TitleGray, H1_main, H2_main, Main, Div_flex,
          Section, Form, H3_main,  Div_flex_form, Div_input, Input, Input_DDNumber, Input_second,
          Div_flex_next, Link, Button, Img_none, Img_block, Label, Payment_options, Section_payments,
-         Input_radio, Img_creditCard, Label_second, Input_Option_second, Input_text, P_options, Div_none } from './main'
+         Input_radio, Img_creditCard, Label_second, Input_Option_second, Input_text, P_options, Div_none, Img_arrow_mobile } from './main'
 
 import MainOrder from '../Order'
 
@@ -72,6 +73,37 @@ function MainCheckout() {
       
    }
 
+   function enterIDUPI(){
+      const Div_UPI = document.querySelector<HTMLElement>("#Div_ID_UPI")!;
+      const Div_phonePe = document.querySelector<HTMLElement>("#Div_ID_phonePe")!;
+      const Div_paytm = document.querySelector<HTMLElement>("#Div_ID_paytm")!;
+      
+      Div_UPI.style.display = "block";
+      Div_phonePe.style.display = "none";
+      Div_paytm.style.display = "none";
+   }
+
+
+   function enterIDphonePe(){
+      const Div_UPI = document.querySelector<HTMLElement>("#Div_ID_UPI")!;
+      const Div_phonePe = document.querySelector<HTMLElement>("#Div_ID_phonePe")!;
+      const Div_paytm = document.querySelector<HTMLElement>("#Div_ID_paytm")!;
+      
+      Div_UPI.style.display = "none";
+      Div_phonePe.style.display = "block";
+      Div_paytm.style.display = "none";
+   }
+
+   function enterIDpaytm(){
+      const Div_UPI = document.querySelector<HTMLElement>("#Div_ID_UPI")!;
+      const Div_phonePe = document.querySelector<HTMLElement>("#Div_ID_phonePe")!;
+      const Div_paytm = document.querySelector<HTMLElement>("#Div_ID_paytm")!;
+      
+      Div_UPI.style.display = "none";
+      Div_phonePe.style.display = "none";
+      Div_paytm.style.display = "block";
+   }
+
     return (
       <Main>
          <Section>
@@ -80,6 +112,9 @@ function MainCheckout() {
                <img src={arrow_nav} alt="Arrow icon" />
                <Div_options_TitleGray>Checkout</Div_options_TitleGray>
             </Div_options>
+            <a href="./cart.html">
+               <Img_arrow_mobile src={arrow_nav_left} alt="Arrow icon" />
+            </a>
             <H1_main>Checkout</H1_main>
             <Div_flex>
                <H2_main>Add New Address</H2_main>
@@ -132,7 +167,7 @@ function MainCheckout() {
 
             <Section_payments id="section_payments">
                <Payment_options >
-                  <Input_radio type="radio" id='UPI' name='payment'  value="UPI" />
+                  <Input_radio type="radio" id='UPI' name='payment'  value="UPI" checked />
                   <Label htmlFor="UPI">
                      <img src={Img_UPI} alt="UPI Logo" />
                      <h5>UPI</h5>
@@ -169,34 +204,36 @@ function MainCheckout() {
                   <img src={Img_Google} alt="Amazon pay Logo" />
                   <h5>Google Pay</h5>
                </Label_second >
-               <Div_none>
+               <Div_none id='Div_ID_UPI'>
                   <Input_text type="text" placeholder='Enter your UPI Id' />
                   <P_options>Eg: 123456789@ybl</P_options>
-                  <input type="checkbox" name="save" id="save" value= "s" /> Save this for future transactions
+                  <input type="checkbox" name="save" id="save" value= "s" /> <h4>Save this for future transactions</h4> 
                </Div_none>
-               <Input_Option_second type="radio" id='google' name='payment-options' value="google" /> 
+               <Input_Option_second type="radio" id='google' name='payment-options' value="google" onClick={enterIDUPI}/> 
 
                <Label_second htmlFor="phone pe">
                   <img src={Img_Pe} alt="Phone pe Logo" />
                   <h5>Phone Pe</h5>
                </Label_second >
-               <Div_none>
+               <Div_none id='Div_ID_phonePe'>
                   <Input_text type="text" placeholder='Enter your UPI Id' />
                   <P_options>Eg: 123456789@ybl</P_options>
-                  <input type="checkbox" name="save-pe" id="save-pe" value= "s" /> Save this for future transactions
+                  <input type="checkbox" name="save-pe" id="save-pe" value= "s" /> <h4>Save this for future transactions</h4> 
+                  
                </Div_none>
-               <Input_Option_second type="radio" id='phone pe' name='payment-options' value="phonePe" /> 
+               <Input_Option_second type="radio" id='phone pe' name='payment-options' value="phonePe" onClick={enterIDphonePe} /> 
 
                <Label_second htmlFor="paytm">
                   <img src={Img_Paytm} alt="Paytm Logo" />
                   <h5>Paytm</h5>
                </Label_second >
-               <Div_none>
+               <Div_none id='Div_ID_paytm'>
                   <Input_text type="text" placeholder='Enter your UPI Id' />
                   <P_options>Eg: 123456789@ybl</P_options>
-                  <input type="checkbox" name="save-paytm" id="save-paytm" value= "s" /> Save this for future transactions
+                  <input type="checkbox" name="save-paytm" id="save-paytm" value= "s" />
+                  <h4>Save this for future transactions</h4> 
                </Div_none>
-               <Input_Option_second type="radio" id='paytm' name='payment-options' value="paytm" />
+               <Input_Option_second type="radio" id='paytm' name='payment-options' value="paytm" onClick={enterIDpaytm} />
             </section>
           
 

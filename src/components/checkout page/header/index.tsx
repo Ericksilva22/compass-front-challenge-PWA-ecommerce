@@ -10,7 +10,7 @@ import Icon_add_mobile  from '../../../assets/Images/Home Page/add-to-homescreen
 import Icon_notification_mobile  from '../../../assets/Images/Home Page/notification-mobile.svg'
 
 import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon, ImgLabel, Img_icon,
-   Div_desktop, Div_mobile} from './header'
+   Div_desktop} from './header'
 
 function Header() {
 
@@ -74,33 +74,6 @@ function Header() {
                <ImgLabel id='label_bag' src={Label} alt="Bag icon" />
             </Headericons>
          </Div_desktop>
-
-         <Div_mobile>
-            <nav>
-               <ul>
-                  <li>
-                     <img src={Icon_appbar_mobile} alt="" />
-                  </li>
-
-                  <li>
-                     <h1>Home</h1>
-                  </li>
-
-                  <li>
-                     <img src={Icon_add_mobile} alt="" />
-                  </li>
-
-                  <li>
-                     <img src={Icon_serch_mobile} alt="" />
-                  </li>
-
-                  <li>
-                     <img src={Icon_notification_mobile} alt="" />
-                  </li>
-               </ul>
-            </nav>
-            
-         </Div_mobile>
       </Headerhome>
       
     )

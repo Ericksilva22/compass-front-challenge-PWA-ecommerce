@@ -17,35 +17,6 @@ export const Div_desktop = styled.div`
     }
 
 `
-
-export const Div_mobile = styled.div`
-     @media (max-width:425px) {
-
-        ul{
-            display: flex;
-            list-style: none;
-        }
-
-        h1{
-            font-weight: 600;
-            font-size: 1.25rem;
-            color: #1B4B66;
-            margin-left: 0.5rem;
-            margin-right: 12rem;
-        }
-
-        img{
-            margin-right: 1rem;
-        }
-    }
-
-    @media (min-width: 426px){
-        display: none;
-    }
-
-`
-
-
 export const HeaderNav = styled.nav`
     width: 40%;
     margin-right: 15rem;

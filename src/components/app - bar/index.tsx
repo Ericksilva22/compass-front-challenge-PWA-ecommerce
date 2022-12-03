@@ -26,7 +26,7 @@ function AppBar() {
                <img src={Img_app_profile}  />
             </a>
             
-            <a href="./src/assets/Pages/page404.html">
+            <a href="./src/assets/Pages/cart.html">
                <img src={Img_app_outline}  />
             </a>
             

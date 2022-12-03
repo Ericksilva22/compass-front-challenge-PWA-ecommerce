@@ -1,6 +1,7 @@
 import Header from '../../../../components/header'
-import Footer from '../../../../components/footer'
+import Footer from '../../../../components/Categoty page/footer'
 import MainSkincare from '../../../../components/Categoty page/skincare/page 1'
+import SortModal from '../../../../components/Categoty page/sort - modal box'
 
 function ContentCategory() {
   
@@ -9,6 +10,7 @@ function ContentCategory() {
        <Header />
        <MainSkincare />
        <Footer />
+       <SortModal />
       </div>
     )
   }

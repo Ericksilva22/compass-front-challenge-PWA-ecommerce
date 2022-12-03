@@ -11,16 +11,24 @@ import Img_star from '../../../../assets/Images/Category page/star.svg'
 import Img_grid from '../../../../assets/Images/Category page/grid.svg'
 import Img_sort from '../../../../assets/Images/Category page/sort.svg'
 import Img_watches from '../../../../assets/Images/Category page/louis.png'
+import Img_sort_mobile from '../../../../assets/Images/Category page/Group 138.png'
 
 
 import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Div_options_TitleGray, 
    H1_main, Section_content, Side_menu, Div_side, Title_side, Less_side, Label_Side, Section_options,
    ArrivalsItens, DivArrivalsItens, ArrivalsItensName, ArrivalsItensh4, ArrivalsItensP,Div_prices,   
    ArrivalsItensPrice, Section_cards, Card_img, Rating, P_Rating, P_priceOriginal, P_priceOFF, Img_options,
-   P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage,
-   Div_pages, Div_next, Link_selectPage_actived, Link_next, DivArrivalsItensTwo} from './mainWatches'
+   P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage, Div_mobile,
+   Div_pages, Div_next, Link_selectPage_actived, Link_next, Img_arrow_mobile, Div_sort_mobile, DivArrivalsItens_none}  from './mainWatches'
 
 function MainWatches() {
+
+   function displayModal(){
+      const modal = document.querySelector<HTMLElement>('#modal_container-sort')!;
+      const fade = document.querySelector<HTMLElement>('#fade-sort')!;
+      modal.style.display = "block";
+      fade.style.display = "block";
+   }
     return (
       <Main>
          <Figure_banner>
@@ -130,192 +138,197 @@ function MainWatches() {
                      <Option_show value="price">Price</Option_show>
                   </Select_show>
                </Section_options>
-               <DivArrivalsItens className='Itens_one'>
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Watcher" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
-                         <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
-                        <P_priceOriginal>$78.98</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
+               <Div_mobile>
+                  <DivArrivalsItens className='Itens_one'>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Watcher" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
+                           <P_priceOriginal>$78.98</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
 
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Leather Coach Bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
-                        <P_priceOriginal>$109.38</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Leather Coach Bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
+                           <P_priceOriginal>$109.38</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
 
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Brown bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
-                  </ArrivalsItens>
-               </DivArrivalsItens>
-
-               <DivArrivalsItens className='Itens_one'>
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Blossom Pouch" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Boujee</ArrivalsItensh4 >
-                         <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Black Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$56.49</ArrivalsItensPrice>
-                        <P_priceOriginal>$112.98</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
-
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Leather Coach Bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
-                        <P_priceOriginal>$109.38</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
-
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Brown bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Brown bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
                         <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
-                        <P_priceOriginal>$78.66</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
-               </DivArrivalsItens>
+                     </ArrivalsItens>
+                  </DivArrivalsItens>
 
-               <DivArrivalsItens className='Itens_one'>
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Blossom Pouch" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
-                         <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
-                        <P_priceOriginal>$78.98</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                     
-                  </ArrivalsItens>
+                  <DivArrivalsItens className='Itens_one'>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Blossom Pouch" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Boujee</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Black Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$56.49</ArrivalsItensPrice>
+                           <P_priceOriginal>$112.98</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
 
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Leather Coach Bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
-                        <P_priceOriginal>$109.38</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                     
-                  </ArrivalsItens>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Leather Coach Bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
+                           <P_priceOriginal>$109.38</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
 
-                  <ArrivalsItens>
-                     <a href="../../Product pages/Watches.html">
-                        <Card_img src={Img_watches} alt="Brown bag" />
-                     </a>
-                     <ArrivalsItensName>
-                        <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
-                        <img src={Img_like} alt="Like icon" />
-                     </ArrivalsItensName>
-                     <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
-                     <Rating>
-                        <img src={Img_star}  alt="Stars icon" />
-                        <P_Rating >43 ratings</P_Rating >
-                     </Rating>
-                     <Div_prices >
-                        <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
-                        <P_priceOriginal>$78.66</P_priceOriginal>
-                        <P_priceOFF>50%OFF</P_priceOFF>
-                     </Div_prices >
-                  </ArrivalsItens>
-               </DivArrivalsItens>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Brown bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
+                           <P_priceOriginal>$78.66</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
+                  </DivArrivalsItens>
+
+                  <DivArrivalsItens_none className='Itens_one'>
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Blossom Pouch" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$39.49</ArrivalsItensPrice>
+                           <P_priceOriginal>$78.98</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                        
+                     </ArrivalsItens>
+
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Leather Coach Bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Coach</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Leather Coach Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$54.69</ArrivalsItensPrice>
+                           <P_priceOriginal>$109.38</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                        
+                     </ArrivalsItens>
+
+                     <ArrivalsItens>
+                        <a href="../../Product pages/Watches.html">
+                           <Card_img src={Img_watches} alt="Brown bag" />
+                        </a>
+                        <ArrivalsItensName>
+                           <ArrivalsItensh4 >Remus</ArrivalsItensh4 >
+                           <img src={Img_like} alt="Like icon" />
+                        </ArrivalsItensName>
+                        <ArrivalsItensP>Brown Strap Bag</ArrivalsItensP>
+                        <Rating>
+                           <img src={Img_star}  alt="Stars icon" />
+                           <P_Rating >43 ratings</P_Rating >
+                        </Rating>
+                        <Div_prices >
+                           <ArrivalsItensPrice>$57.00</ArrivalsItensPrice>
+                           <P_priceOriginal>$78.66</P_priceOriginal>
+                           <P_priceOFF>50%OFF</P_priceOFF>
+                        </Div_prices >
+                     </ArrivalsItens>
+                  </DivArrivalsItens_none>
+               </Div_mobile>
             </Section_cards>
          
          </Section_content>
+         <Div_sort_mobile onClick={displayModal}>
+            <img src={Img_sort_mobile} alt="" />
+         </Div_sort_mobile>
          <Section_selectPage>
             <Div_pages>
                <Link_selectPage_actived href='#'>1</Link_selectPage_actived>

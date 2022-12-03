@@ -2,11 +2,17 @@ import styled from 'styled-components'
 
 export const Main = styled.main`
     margin: 4rem 1rem 10rem 1rem;
+    @media (max-width:425px){
+        margin-bottom: 4rem;
+    }
 `
 
 export const Figure_banner = styled.figure`
     width: 100%;
     margin-bottom: 4rem;
+    @media (max-width:425px){
+        display: none;
+    }
 `
 
 export const Content_banner = styled.img`
@@ -19,6 +25,9 @@ export const Div_options = styled.div`
    align-items: center;
    width: 13%;
    margin-bottom: 2rem;
+   @media (max-width:425px){
+        display: none;
+    }
 `
 
 export const Div_options_Title = styled.a`
@@ -34,11 +43,24 @@ export const Div_options_TitleGray = styled.h2`
     color: #626262;
 `
 
+export const Img_arrow_mobile = styled.img`
+    display: none;
+    @media (max-width: 425px) {
+        display: inline;
+        margin-right: 2rem;
+        float: left ;
+    }
+    
+`
+
 export const H1_main = styled.h1`
     font-weight: 600;
     font-size: 2.125rem;
     color: #1B4B66;
     margin-bottom: 2rem;
+    @media (max-width:425px){
+        font-size: 1.125rem;
+    }
 `
 
 export const Section_content = styled.section`
@@ -48,6 +70,9 @@ export const Section_content = styled.section`
 
 export const Side_menu = styled.aside`
     width:20%;
+    @media (max-width:425px){
+        display: none;
+    }
 `
 
 export const Div_side = styled.div`
@@ -79,6 +104,9 @@ export const Section_options = styled.section`
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2.2rem;
+    @media (max-width:425px){
+        display: none;
+    }
 `
 
 export const Img_options = styled.img`
@@ -152,6 +180,32 @@ export const DivArrivalsItens = styled.div`
     align-items: center;
     width:100%;
     margin-bottom: 4rem;
+    @media (max-width: 425px) {
+        flex-direction: column;
+        width:50%;
+    }
+` 
+
+export const DivArrivalsItens_none = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-bottom: 4rem;
+    @media (max-width: 425px) {
+        display:none;
+    }
+` 
+
+export const DivArrivalsItens_float = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-bottom: 4rem;
+    @media (max-width: 425px) {
+        float: right;
+    }
 ` 
 
 export const DivArrivalsItensTwo = styled.div`
@@ -166,6 +220,10 @@ export const ArrivalsItens = styled.div`
     display: flex;
     flex-direction: column;
     width: 28%;
+    @media (max-width: 425px) {
+        width:90%;
+        
+    }
 `
 
 export const ArrivalsItensName = styled.div`
@@ -192,17 +250,27 @@ export const ArrivalsItensP = styled.p`
 export const ArrivalsItensPrice = styled.p`
     font-weight: 500;
     font-size: 1rem;
+    @media (max-width: 425px) {
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
     
 `
 
 export const Card_img = styled.img`
    border-radius: 16px;
+   @media (max-width: 425px) {
+        width:100%;
+   }
 `
 
 export const Rating = styled.div`
     display: flex;
     margin-top: 1rem;
     align-items: center;
+    @media (max-width: 425px) {
+        display:none;
+    }
 `
 
 export const P_Rating = styled.p`
@@ -225,6 +293,10 @@ export const P_priceOriginal = styled.p`
     color: #B6B6B6;
     text-decoration: line-through;
     margin-left: 0.8rem;
+    @media (max-width: 425px) {
+        font-weight: 500;
+        font-size: 0.6rem;
+    }
 `
 
 export const P_priceOFF = styled.p`
@@ -232,11 +304,18 @@ export const P_priceOFF = styled.p`
     font-size: 1rem;
     color: #FF404B;
     margin-left: 0.8rem;
+    @media (max-width: 425px) {
+        font-weight: 500;
+        font-size: 0.6rem;
+    }
 `
 
 export const Section_selectPage = styled.section`
     display: flex;
     width: 52%;
+    @media (max-width: 425px) {
+        display:none;
+    }
 `
 export const Div_pages = styled.div`
     border-radius:12px;
@@ -244,6 +323,10 @@ export const Div_pages = styled.div`
     width: 55%;
     display: flex;
     margin-left: 17rem;
+    @media (max-width: 425px) {
+        width: 25%;
+    }
+   
 `
 
 export const Div_next = styled.div`
@@ -254,6 +337,9 @@ export const Div_next = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 425px) {
+        margin-left: 8rem;
+    }
 `
 
 export const Link_next = styled.a `
@@ -276,4 +362,20 @@ export const Link_selectPage_actived = styled.a`
     color: #FFFFFF;
     border-radius:12px;
     text-decoration: none;
+`
+
+export const Div_mobile = styled.div`
+    @media (max-width: 425px) {
+        display: flex;
+        width: 120%;
+    }
+`
+
+export const Div_sort_mobile = styled.div`
+    display: none;
+    @media (max-width: 425px) {
+        display: block;
+        width: 120%;
+        margin-top: -4rem;
+    }
 `

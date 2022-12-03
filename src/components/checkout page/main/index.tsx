@@ -238,7 +238,7 @@ function MainCheckout() {
           
 
             <Div_flex_next>
-               <Link href="">Back to cart</Link>
+               <Link href="./cart.html">Back to cart</Link>
                <Button>
                   <a href="">Next</a>
                </Button>

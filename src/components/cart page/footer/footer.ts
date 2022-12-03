@@ -71,31 +71,6 @@ export const Img_Logos = styled.img `
         margin-left:0;
     }
 `
-
-export const DivMore = styled.div`
-    display: none;
-    @media (max-width:425px) {
-        display: block;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 2rem;
-        margin-top: -5rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    @media (max-width:320px) {
-        display: block;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 2rem;
-        margin-top: -5rem;
-        display: flex;
-        justify-content: space-between;
-        width: 120%;
-    }
-`
-
 export const H2_more = styled.h2`
 
     @media (max-width:425px) {

@@ -1,15 +1,16 @@
 import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.svg'
 import arrow_nav_up from '../../../assets/Images/Checkout Page/Vector-up.svg'
 import arrow_nav_down from '../../../assets/Images/Checkout Page/Vector-down.svg'
+import arrow_nav_left from '../../../assets/Images/Checkout Page/Vector-left.svg'
 import Img_coach from '../../../assets/Images/Checkout Page/image-coach.svg'
 
 import { Div_options, Div_options_TitleGray, Div_options_Title, H1_main, Main, Div_order, P_order, Button_order,
          Button_continue, Section_cart, Div_cart, Div_name, Div_product, Div_product_descriptions, Link_primary,
-         Link_Sencondary, Div_Flex_Cart, Div_apply_cart} from './main'
+         Link_Sencondary, Div_Flex_Cart, Div_apply_cart, Div_Flex_Coupon, Div_wishlist, Div_pri} from './main'
 
 import {H1_order, Div_details, P_details, Figure, H3_order} from '../../checkout page/Order/Order'
 
-import {Div_flex, H2_main, Img_none} from '../../checkout page/main/main'
+import {Div_flex, H2_main, Img_none, Img_arrow_mobile} from '../../checkout page/main/main'
 
 import {Div_apply, P_Div_apply, A_Div_apply} from '../../modal box/modal'
 
@@ -48,6 +49,9 @@ function MainCart() {
             <img src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>My cart</Div_options_TitleGray>
          </Div_options>
+         <a href="../../../index.html">
+            <Img_arrow_mobile src={arrow_nav_left} alt="Arrow icon" />
+         </a>
          <H1_main>My cart</H1_main>
          <Section_cart>
             <Div_cart>
@@ -74,24 +78,25 @@ function MainCart() {
                   </Div_Flex_Cart >
 
                   <Div_product_descriptions>
-                     <div>
+                     <Div_pri>
                         <p>$54.69</p>
                         <p>1</p>
                         <p>54.69</p>
-                     </div>
+                     </Div_pri>
+                     <h5>$65.00</h5>
 
-                     <div>
+                     <Div_wishlist>
                         <Link_primary href="">Move to Wishlist</Link_primary>
                         <Link_Sencondary href="">Remove</Link_Sencondary>
-                     </div>
+                     </Div_wishlist>
                   </Div_product_descriptions>
                </Div_product>
 
-               <Div_flex>
+               <Div_Flex_Coupon>
                   <H2_main>Apply Coupon Code</H2_main>
                   <img src={arrow_nav_down} id="Icon_down_cart" onClick={CloseCart} alt="" />
                   <Img_none src={arrow_nav_up} id="Icon_up_cart" onClick={MoreCart} alt="" />
-               </Div_flex>
+               </Div_Flex_Coupon>
 
                
                <Div_apply_cart id='Div_apply'>
@@ -122,7 +127,11 @@ function MainCart() {
                </Div_details>
 
                <Div_details>
-                  <Button_order>Place Order</Button_order>
+                  <Button_order>
+                     <a href="./checkout.html">
+                        Place Order
+                     </a>
+                  </Button_order>
                   <Button_continue>Continue Shopping</Button_continue>
                </Div_details>
                

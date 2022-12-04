@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Header from '../components/header/index'
+import Header from '../components/Product page/header/Variation/index'
 
 
 export default {

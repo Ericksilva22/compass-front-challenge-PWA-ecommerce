@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import NewArrivals from '../components/home page/new arrivals/index'
+import NewArrivals from '../components/home page/new arrivals/Variation/index'
 
 
 export default {

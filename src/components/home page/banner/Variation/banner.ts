@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Divtitle = styled.div`
+    font-family: 'Inter', sans-serif;
     background-color: #F0F0F0;
     color: #171520;
     height: 3.125rem;
@@ -17,6 +18,7 @@ export const Divtitle = styled.div`
 export const Bannerh1 = styled.h1`
    font-size: 0.875rem;
    font-weight: 400;
+   font-family: 'Inter', sans-serif;
 `
 
 export const BannerFigure = styled.figure`
@@ -54,8 +56,8 @@ export const BannerDivCarry = styled.div`
     border-radius: 24px 0px 0px 24px;
     color: #1B4B66;
     position: relative;
-    top: -23rem;
-    left: 42.3rem;
+    top: -24rem;
+    left: 34.4rem;
 
     @media(max-width:425px){
         width: 52.5%;
@@ -84,9 +86,10 @@ export const BannerDivCarry = styled.div`
 
 export const BannerDivCarryH1 = styled.h1`
    font-size: 3.75rem;
-   font-weight: 800;
+   font-weight: 700;
    margin-left: 4%;
    padding-top: 5%;
+   font-family: 'Inter', sans-serif;
 
    @media(max-width:425px){
         font-size: 1.5rem;
@@ -101,8 +104,9 @@ export const BannerDivCarryP = styled.p`
    font-size: 1.75rem;
    font-weight: 500;
    margin-left: 4%;
-   padding-top: 2%;
+   margin-top: -2rem;
    padding-right: 20%;
+   font-family: 'Inter', sans-serif;
 
    @media(max-width:425px){
         font-size: 0.75rem;
@@ -126,6 +130,7 @@ export const BannerButton = styled.button`
     margin-left: 4%;
     margin-top: 3%;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 
     @media(max-width:425px){
         display:none;

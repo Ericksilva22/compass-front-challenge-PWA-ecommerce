@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
+    font-family: 'Inter', sans-serif;
     margin: 4rem 1rem 10rem 1rem;
     @media (max-width:425px){
         margin-bottom: 4rem;

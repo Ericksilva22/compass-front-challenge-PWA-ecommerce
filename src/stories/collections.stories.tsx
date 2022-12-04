@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Handpicked from '../components/home page/collections/index'
+import Handpicked from '../components/home page/collections/Variation/index'
 
 
 export default {

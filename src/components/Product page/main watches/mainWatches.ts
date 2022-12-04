@@ -4,6 +4,7 @@ export const Main_coach = styled.main`
     margin-top: 4rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
+    font-family: 'Inter', sans-serif;
 `
 
 export const Div_options = styled.div`

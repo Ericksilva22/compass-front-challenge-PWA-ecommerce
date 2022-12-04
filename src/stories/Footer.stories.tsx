@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Footer from '../components/footer/index'
+import Footer from '../components/Product page/footer/Variation/index'
 
 
 export default {

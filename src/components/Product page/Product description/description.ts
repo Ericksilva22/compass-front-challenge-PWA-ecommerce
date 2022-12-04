@@ -6,6 +6,7 @@ export const Section_description = styled.section`
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 12rem;
+    font-family: 'Inter', sans-serif;
     @media (max-width: 425px) {
         margin-bottom: -19rem;
     }

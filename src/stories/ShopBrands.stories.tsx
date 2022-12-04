@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import ShopBrands from '../components/home page/shop/index'
+import ShopBrands from '../components/home page/shop/Variation/index'
 
 
 export default {

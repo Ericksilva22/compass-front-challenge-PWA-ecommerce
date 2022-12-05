@@ -3,16 +3,18 @@ import arrow_nav_up from '../../../assets/Images/Checkout Page/Vector-up.svg'
 import arrow_nav_down from '../../../assets/Images/Checkout Page/Vector-down.svg'
 import arrow_nav_left from '../../../assets/Images/Checkout Page/Vector-left.svg'
 import Img_coach from '../../../assets/Images/Checkout Page/image-coach.svg'
+import Img_blossomModal from '../../../assets/Images/Product Page/pink-bag-small_previwe.png'
 
 import { Div_options, Div_options_TitleGray, Div_options_Title, H1_main, Main, Div_order, P_order, Button_order,
          Button_continue, Section_cart, Div_cart, Div_name, Div_product, Div_product_descriptions, Link_primary,
-         Link_Sencondary, Div_Flex_Cart, Div_apply_cart, Div_Flex_Coupon, Div_wishlist, Div_pri} from './main'
+         Link_Sencondary, Div_Flex_Cart, Div_apply_cart, Div_Flex_Coupon, Div_wishlist, Div_pri, Img_modal_pre} from './main'
 
 import {H1_order, Div_details, P_details, Figure, H3_order} from '../../checkout page/Order/Order'
 
 import {Div_flex, H2_main, Img_none, Img_arrow_mobile} from '../../checkout page/main/main'
 
 import {Div_apply, P_Div_apply, A_Div_apply} from '../../modal box/modal'
+
 
 function MainCart() {
 
@@ -67,23 +69,51 @@ function MainCart() {
                <Div_product>
                   <Div_Flex_Cart >
                      <Figure>
+                        <Img_modal_pre src={Img_blossomModal} alt="" />
+                     </Figure>
+
+                     <div>
+                        <H3_order>Grande</H3_order>
+                        <P_order >Blossom Pouch</P_order >
+                        <P_order >Qty- 2</P_order >
+                     </div>
+                  </Div_Flex_Cart >
+
+                  <Div_product_descriptions>
+                     <Div_pri>
+                        <p>$39.49</p>
+                        <p>2</p>
+                        <p>78.98</p>
+                     </Div_pri>
+                     <h5>$78.98</h5>
+
+                     <Div_wishlist>
+                        <Link_primary href="">Move to Wishlist</Link_primary>
+                        <Link_Sencondary href="">Remove</Link_Sencondary>
+                     </Div_wishlist>
+                  </Div_product_descriptions>
+               </Div_product>
+
+               <Div_product>
+                  <Div_Flex_Cart >
+                     <Figure>
                         <img src={Img_coach} alt="" />
                      </Figure>
 
                      <div>
                         <H3_order>Coach</H3_order>
                         <P_order >Leather Coach Bag</P_order >
-                        <P_order >Qty- 1</P_order >
+                        <P_order >Qty- 2</P_order >
                      </div>
                   </Div_Flex_Cart >
 
                   <Div_product_descriptions>
                      <Div_pri>
                         <p>$54.69</p>
-                        <p>1</p>
-                        <p>54.69</p>
+                        <p>2</p>
+                        <p>109.38</p>
                      </Div_pri>
-                     <h5>$65.00</h5>
+                     <h5>$109.38</h5>
 
                      <Div_wishlist>
                         <Link_primary href="">Move to Wishlist</Link_primary>
@@ -108,7 +138,7 @@ function MainCart() {
                <H1_order>Order Summary</H1_order>
                <Div_details>
                   <P_details>Sub Total</P_details>
-                  <p>$119.69</p>
+                  <p>$190.37</p>
                </Div_details>
 
                <Div_details>
@@ -123,7 +153,7 @@ function MainCart() {
 
                <Div_details>
                   <P_order>Grand Total</P_order>
-                  <P_order>$106.29</P_order>
+                  <P_order>$176.97</P_order>
                </Div_details>
 
                <Div_details>

@@ -50,3 +50,10 @@ export const Div_details = styled.div`
 export const P_details = styled(P_order)`
     font-weight: 500;
 `
+
+export const Img_modal_pre = styled.img `
+    border-radius:4px;
+    width: 94%;
+    margin-right: -4rem;
+
+`

@@ -134,6 +134,11 @@ export const Btn_Order = styled.button`
     margin-top: 1rem;
     margin-bottom: 2rem;
     cursor: pointer;
+    
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 `
 
 export const P_BtnOrder = styled.p`

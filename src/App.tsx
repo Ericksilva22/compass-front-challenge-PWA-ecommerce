@@ -8,12 +8,14 @@ import NewArrivals from './components/home page/new arrivals'
 import Modal from './components/modal box'
 import Categories from './components/home page/top categories'
 import AppBar from './components/app - bar'
+import {CartProvider} from './commom/cart'
+
 function App() {
   
   return (
     <div className="App">
      <Header />
-     <Modal />
+      <Modal />
      <Banner />
      <Categories />
      <NewArrivals />

@@ -227,10 +227,17 @@ export const Div_pri = styled.div`
 `
 
 export const Div_wishlist = styled.div`
+    margin-bottom: 2rem;
 
     @media (max-width:425px) {
         border-top: 1px solid rgba(0, 0, 0, 0.12);
         width: 100%;
         padding: 1rem;
     }
+`
+
+export const Img_modal_pre = styled.img `
+    border-radius:4px;
+    width: 60%;
+
 `

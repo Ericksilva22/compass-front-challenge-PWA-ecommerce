@@ -134,6 +134,11 @@ export const Btn_Order = styled.button`
     margin-top: 1rem;
     margin-bottom: 2rem;
     cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 `
 
 export const P_BtnOrder = styled.p`
@@ -153,4 +158,9 @@ export const P_continue = styled.p`
 
 export const Img_pointer = styled.img`
     cursor: pointer;
+`
+
+export const Img_modal_pre = styled.img`
+    width: 80%;
+    border-radius: 4px;
 `

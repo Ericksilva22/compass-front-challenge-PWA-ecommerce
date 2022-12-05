@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+ import styled from 'styled-components'
 
 export const Main = styled.main`
     margin: 4rem 1rem 10rem 1rem;

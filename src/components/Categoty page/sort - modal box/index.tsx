@@ -32,7 +32,7 @@ function SortModal() {
                 <input type="radio" name="form-sort" id="whats" />
                 <label htmlFor="whats">What's New</label>
 
-                <input type="radio" name="form-sort" id="price-low" />
+                <input checked type="radio" name="form-sort" id="price-low" />
                 <label htmlFor="price-low">Price - Low to High</label>
 
                 <input type="radio" name="form-sort" id="price-high" />

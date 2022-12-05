@@ -10,7 +10,7 @@ export const Section_appBar = styled.section`
         position: fixed;
         bottom: 0rem;
         background-color: #FFFFFF;
-        width: 92%;
+        width: 100%;
     }
     
     @media (max-width: 375px) {

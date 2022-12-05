@@ -147,7 +147,7 @@ function MainHandbags() {
                      <Option_show value="price">Price</Option_show>
                   </Select_show>
                </Section_options>
-               <Div_mobile>
+               <Div_mobile id='content-products'>
                   <DivArrivalsItens className='Itens_one'>
                      <ArrivalsItens>
                         <a href="../../Product pages/Blossom.html">

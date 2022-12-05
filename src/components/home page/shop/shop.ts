@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const SectionHand = styled.section`
     color: #13101E;
     margin-top: 1rem;
+    overflow-x: hidden;
 
     @media (max-width: 375px) {
         width: 113%;
@@ -200,5 +201,18 @@ export const Img_shotcut = styled.img`
         border-radius: 12px;
         margin-left: 1rem;
     }  
+
+`
+
+export const Carousel = styled.div`
+    display: flex;
+    justify-content: space-around;
+    width: 250%;
+    
+
+    img {
+        width: 120%;
+        margin-left: -5rem;
+    }
 
 `

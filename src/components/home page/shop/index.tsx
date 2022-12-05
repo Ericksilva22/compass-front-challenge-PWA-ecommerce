@@ -13,7 +13,8 @@ import Img_shortcut from '../../../assets/Images/Home Page/PWA-CTA-mobile.png'
 import Img_spring from '../../../assets/Images/Home Page/spring.png'
 
 
-import { SectionHand, Shoph1, DivBrands, FigureShop, ImgLifestyle, Shoph3, Shoph2 ,Img_shotcut,  DivSkin_Face, Skin_img, FigureShotcurt, ImgShotcurt,  Skin_p, Skin_Arrow1, Face_p, Div_flex, Img_flex, Div_faceapp   } from './shop'
+import { SectionHand, Shoph1, DivBrands, Carousel, FigureShop, ImgLifestyle, Shoph3, Shoph2 ,Img_shotcut,  DivSkin_Face, Skin_img, FigureShotcurt, ImgShotcurt,  Skin_p, Skin_Arrow1, Face_p, Div_flex, Img_flex, Div_faceapp   } from './shop'
+import {motion} from 'framer-motion'
 
 function ShopBrands() {
    return (
@@ -94,9 +95,18 @@ function ShopBrands() {
             
          </DivSkin_Face >
          <Shoph3>Trending Deals</Shoph3>
-         <a href="./src/assets/Pages/page404.html">
-            <Img_shotcut src={Img_spring} alt="" />
-         </a>
+         <motion.div drag="x" dragConstraints={{right: 0, left: -540}}>
+            <Carousel>
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_shotcut src={Img_spring} alt="" />
+               </a>
+
+               <a href="./src/assets/Pages/page404.html">
+                  <Img_shotcut src={Img_spring} alt="" />
+               </a>
+            </Carousel>
+         </motion.div>
+         
       </SectionHand>
    )
 }

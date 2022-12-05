@@ -22,6 +22,7 @@ export const Bannerh1 = styled.h1`
 export const BannerFigure = styled.figure`
    width:98%;
    margin: 0 auto;
+  
    @media (max-width: 425px) {
         margin-top: 2rem;
         width:94%;
@@ -41,6 +42,7 @@ export const BannerFigure = styled.figure`
 export const BannerImg = styled.img `
     width:100%;
     border-radius: 24px;
+    cursor: grab;
     @media (max-width: 425px) {
         border-radius: 12px;
     }
@@ -56,6 +58,7 @@ export const BannerDivCarry = styled.div`
     position: relative;
     top: -23rem;
     left: 42.3rem;
+    cursor: grab;
 
     @media(max-width:425px){
         width: 52.5%;

@@ -197,6 +197,8 @@ export const ArrivalsItensPrice = styled.p`
 
 export const Card_img = styled.img`
    border-radius: 16px;
+   width: 98%;
+   
 `
 
 export const Rating = styled.div`

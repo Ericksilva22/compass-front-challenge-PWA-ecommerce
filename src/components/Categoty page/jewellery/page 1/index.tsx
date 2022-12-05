@@ -2,10 +2,10 @@ import arrow_nav from '../../../../assets/Images/Product Page/chevron-right-smal
 import Img_banner from '../../../../assets/Images/Category page/hero.png'
 import Icon_plus from '../../../../assets/Images/Category page/plus.svg'
 import Icon_less from '../../../../assets/Images/Category page/less.svg'
-import Img_Blossom from '../../../../assets/Images/Category page/image-grande.svg'
-import Img_BrownBag from '../../../../assets/Images/Category page/image-remus.png'
-import Img_Coach from '../../../../assets/Images/Category page/image-coach.png'
-import Img_BlackBag from '../../../../assets/Images/Category page/image-boujee.png'
+import Img_Blossom from '../../../../assets/Images/Category page/jewellery.jpg'
+import Img_BrownBag from '../../../../assets/Images/Category page/jewellery.jpg'
+import Img_Coach from '../../../../assets/Images/Category page/jewellery.jpg'
+import Img_BlackBag from '../../../../assets/Images/Category page/jewellery.jpg'
 import Img_like from '../../../../assets/Images/Category page/wishlist.svg'
 import Img_star from '../../../../assets/Images/Category page/star.svg'
 import Img_grid from '../../../../assets/Images/Category page/grid.svg'
@@ -271,7 +271,7 @@ function MainJewellery() {
                   <DivArrivalsItens_none className='Itens_one'>
                      <ArrivalsItens>
                         <a href="../../Product pages/Blossom.html">
-                           <img src={Img_Blossom} alt="Blossom Pouch" />
+                           <Card_img src={Img_Blossom} alt="Blossom Pouch" />
                         </a>
                         <ArrivalsItensName>
                            <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
@@ -340,13 +340,13 @@ function MainJewellery() {
          <Section_selectPage>
             <Div_pages>
                <Link_selectPage_actived href='#'>1</Link_selectPage_actived>
-               <Link_selectPage href='./handbagsPage2.html'>2</Link_selectPage>
-               <Link_selectPage href='./handbagsPage3.html'>3</Link_selectPage>
-               <Link_selectPage href='./handbagsPage4.html'>4</Link_selectPage>
-               <Link_selectPage href='./handbagsPage5.html'>5</Link_selectPage>
+               <Link_selectPage href='./jewelleryPage2.html'>2</Link_selectPage>
+               <Link_selectPage href='./jewelleryPage3.html'>3</Link_selectPage>
+               <Link_selectPage href='./jewelleryPage4.html'>4</Link_selectPage>
+               <Link_selectPage href='./jewelleryPage5.html'>5</Link_selectPage>
             </Div_pages> 
             <Div_next>
-               <Link_next href='./handbagsPage2.html'>Next</Link_next>
+               <Link_next href='./jewelleryPage2.html'>Next</Link_next>
             </Div_next>
          </Section_selectPage>
       </Main>

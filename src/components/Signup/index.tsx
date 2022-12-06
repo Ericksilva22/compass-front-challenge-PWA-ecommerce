@@ -11,7 +11,7 @@ function ContentSignup() {
       <Div_account>
         <h1>The shopping destination you need</h1>
         <button>
-          <a href="">Get Started</a>
+          <a href="./src/assets/Pages/Signup-phone.html">Get Started</a>
         </button>
         <h3>I already have an account</h3>
       </Div_account>

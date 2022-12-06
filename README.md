@@ -28,7 +28,11 @@ https://www.figma.com/file/mewf8i7Q83rQ134K9ZynXU/PWA-eCommerce-Theme-(Community
 
 <img src="./src/assets/Images/Home Page/Shopware-Cover-final.png" alt="Design Login page">
 
-:link: API repository (In progress):
+ API repository (In progress):
 
  https://github.com/Ericksilva22/API-PWA-ECOMMERCE
+
+:link: Deploy with Vercel: 
+
+ https://compass-front-challenge-pwa-ecommerce-ericksilva22.vercel.app/
 

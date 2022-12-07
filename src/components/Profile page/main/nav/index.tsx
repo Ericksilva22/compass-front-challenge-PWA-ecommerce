@@ -1,6 +1,7 @@
 import Img_li_arrow from '../../../../assets/Images/Profile Page/arrow-li.svg'
+import Img_button_logout from '../../../../assets/Images/Profile Page/logout.svg'
 
-import { Aside, Link_li } from './sidemenu'
+import { Aside, Link_li, ButtonLogout_mobile } from './sidemenu'
 
 function SideMenu() {
    return (
@@ -50,6 +51,10 @@ function SideMenu() {
           </li>
         </ul>
       </nav>
+      <ButtonLogout_mobile>
+        <img src={Img_button_logout} alt="Logout icon" />
+        <p>Logout</p>
+      </ButtonLogout_mobile>
     </Aside>
      
    )

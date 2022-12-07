@@ -12,7 +12,7 @@ function SignupPhone() {
       </div>
       <P_signup>A 4 digit code will be sent to this number.</P_signup>
       <Button>
-        <a href="">Next</a>
+        <a href="./Signup-OTP.html">Next</a>
       </Button>
     </ Main>
      

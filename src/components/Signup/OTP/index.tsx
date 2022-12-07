@@ -17,7 +17,7 @@ function SignupOTP() {
       </Form>
       <P_OTP>Didn’t recieve the code?<span> Request again</span></P_OTP>
       <Button>
-        <a href="">Verify & Create Account</a>
+        <a href="./profile.html">Verify & Create Account</a>
       </Button>
     </ Main>
      

@@ -10,7 +10,7 @@ function SideMenu() {
         <ul>
           <li>
             <div></div>
-            <Link_li href="">Personal Information</Link_li>
+            <Link_li href="./profile - information.html">Personal Information</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

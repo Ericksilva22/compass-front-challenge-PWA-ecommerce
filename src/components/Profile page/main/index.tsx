@@ -10,7 +10,7 @@ function MainProfile() {
     return (
         <section>
             <Div_Titles>
-                <Div_options_Title href="../../../../index.html">Home</Div_options_Title>
+                <Div_options_Title href="./home page.html">Home</Div_options_Title>
                 <Icon_arrow src={arrow_nav} alt="Arrow icon" />
                 <Div_options_TitleGray>User Profile</Div_options_TitleGray>
             </Div_Titles>

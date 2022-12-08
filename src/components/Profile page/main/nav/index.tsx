@@ -16,7 +16,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">Refer and Earn</Link_li>
+            <Link_li href="./profile-Refer.html">Refer and Earn</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

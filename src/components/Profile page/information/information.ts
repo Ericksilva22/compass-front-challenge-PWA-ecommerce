@@ -97,3 +97,8 @@ export const Eye_icon = styled.img`
     left: -3rem;
     top: 0.4rem;
 `
+
+export const H3 = styled(H2)`
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+`

@@ -8,7 +8,7 @@ import SideMenu from '../main/nav'
 import {Icon_arrow, Div_options_Title, Div_options_TitleGray} from '../../Product page/main coach/mainCoach'
 import {H1, Div_Titles, } from '../main/main'
 import {Div_subtitles, ButtonLogout_subtitles, Div_content, Main, H2, Label, Div_names, Input_names, Input_email, 
-        Input_DDD, Input_number, Input_password, Eye_icon } from './information'
+        Input_DDD, Input_number, Input_password, Eye_icon, H3 } from './information'
 
 function MainProfileInformation() {
     return (
@@ -60,7 +60,7 @@ function MainProfileInformation() {
                             <Input_number type="date"/>
                         </div>
 
-                        <H2>Change Password</H2>
+                        <H3>Change Password</H3>
                         <div>
                             <Label htmlFor="current">Current Password</Label>
                             <Input_password type="password" name="current" id="current" placeholder='*********' />

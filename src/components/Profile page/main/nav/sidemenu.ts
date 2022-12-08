@@ -8,6 +8,7 @@ export const Aside = styled.aside`
     
     @media (max-width: 425px) {
         width: 95%;
+        height: 75vh;
     }
 
     nav {

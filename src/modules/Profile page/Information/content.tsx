@@ -11,7 +11,6 @@ function Content() {
         <Header />
         <MainProfileInformation />
         <Footer />
-        <AppBar />
       </div>
     )
   }

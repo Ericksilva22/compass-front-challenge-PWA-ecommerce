@@ -15,6 +15,12 @@ export const ButtonLogout_subtitles = styled.button`
     border-radius: 8px;
     border: 2px solid #1B4B66;
     margin-right: 1rem;
+
+    @media (max-width: 425px) {
+        display: none;
+    }
+
+
     a {
         text-decoration: none;
         font-size: 1rem;
@@ -26,6 +32,10 @@ export const ButtonLogout_subtitles = styled.button`
 export const Div_content = styled.div`
     display:flex;
 
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
+
 `
 
 export const Main = styled.main`
@@ -34,6 +44,7 @@ export const Main = styled.main`
     width: 75%;
     border-radius: 8px;
     padding-right: 1rem;
+
 `
 
 export const H2 = styled.h2`
@@ -42,10 +53,15 @@ export const H2 = styled.h2`
     margin-top: 1rem;
     margin-left: 1rem;
     border-bottom: 1px solid #E5E5E5;
+
 `
 
 export const Div_names = styled.div`
     display: flex;
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
 `
 
 export const Input_names = styled.input`
@@ -57,10 +73,18 @@ export const Input_names = styled.input`
     margin-left: 1rem;
     border: none;
 
+        @media (max-width: 320px) {
+            width: 16.938rem;
+        }
+
     &::-webkit-input-placeholder{ /* Chrome/opera/Safari */
         font-weight: 500;
         font-size: 1rem;
         color:#626262; 
+
+        @media (max-width: 375px) {
+            font-size: 0.8rem;
+        }
     }
 
     &::-moz-placeholder{ /* Firefox 19+ */
@@ -79,17 +103,54 @@ export const Label = styled.label`
 
 export const Input_email = styled(Input_names)`
     width: 37rem;
+
+    @media (max-width: 425px) {
+        width:18rem;
+    }
+
+    @media (max-width: 320px) {
+        width: 16.938rem;
+    }
 `
 
 export const Input_DDD = styled(Input_names)`
     width: 5rem;
+    @media (max-width: 425px) {
+        width:4rem;
+    }
+
+    @media (max-width: 375px) {
+        width:3.7rem;
+    }
+
+    @media (max-width: 320px) {
+        width: 3rem;
+    }
+
+   
 `
 
 export const Input_number = styled(Input_names)`
     width: 19rem;
+
+    @media (max-width: 425px) {
+        width:12.8rem;
+    }
+
+    @media (max-width: 375px) {
+        width:10.8rem;
+    }
+
+    @media (max-width: 320px) {
+        width: 9rem;
+    }
 `
 export const Input_password = styled(Input_names)`
     width: 17.938rem;
+
+    @media (max-width: 320px) {
+        width: 16.938rem
+    }
 `
 
 export const Eye_icon = styled.img`

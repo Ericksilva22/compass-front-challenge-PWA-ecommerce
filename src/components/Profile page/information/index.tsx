@@ -45,7 +45,7 @@ function MainProfileInformation() {
                         </Div_names>
 
                         <div>
-                            <Label htmlFor="email">Last Name</Label>
+                            <Label htmlFor="email">Email</Label>
                             <Input_email type="text" placeholder='Johndoe@johndoe.com' />
                         </div>
                         

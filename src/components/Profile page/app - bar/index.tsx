@@ -14,19 +14,19 @@ function AppBar() {
 
     return (
          <Section_appBar>
-            <a href="">
+            <a href="./home page.html">
                <img src={img_app_home} />
             </a>
             
-            <a href="./src/assets/Pages/page404.html">
+            <a href="./categories.html">
                <img src={Img_app_categories}  />
             </a>
             
-            <a href="./src/assets/Pages/page404.html">
+            <a href="./profile.html">
                <img src={Img_app_profile}  />
             </a>
             
-            <a href="./src/assets/Pages/cart.html">
+            <a href="./cart.html">
                <img src={Img_app_outline}  />
             </a>
             

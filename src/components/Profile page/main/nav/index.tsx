@@ -28,7 +28,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">My Wishlist</Link_li>
+            <Link_li href="./profile-wishlist.html">My Wishlist</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

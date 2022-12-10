@@ -40,7 +40,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">My Adress Book</Link_li>
+            <Link_li href="./profile-book.html">My Adress Book</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

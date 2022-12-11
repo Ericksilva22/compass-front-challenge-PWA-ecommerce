@@ -97,7 +97,9 @@ function Header() {
                   </li>
 
                   <li>
-                     <img src={Icon_notification_mobile} alt="" />
+                     <a href="./notification.html">
+                        <img src={Icon_notification_mobile} alt="" />
+                     </a>  
                   </li>
                </ul>
             </nav>

@@ -21,6 +21,15 @@ function Header() {
       fade.style.display = "block";
    }
 
+   function menuMobileModal(){
+      const modal = document.querySelector<HTMLElement>('#modal_container_menu_mobile')!;
+      const fade = document.querySelector<HTMLElement>('#fade_menu_mobile')!;
+
+      modal.style.display = "block";
+      fade.style.display = "block";
+      
+   }
+
 
     return (
       <Headerhome>
@@ -81,7 +90,7 @@ function Header() {
             <nav>
                <ul>
                   <li>
-                     <img src={Icon_appbar_mobile} alt="" />
+                     <img src={Icon_appbar_mobile} onClick={menuMobileModal} alt="" />
                   </li>
 
                   <li>

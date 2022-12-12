@@ -9,6 +9,9 @@ import Img_apple from '../../../assets/Images/Checkout Page/image 28.svg'
 import Img_Google from '../../../assets/Images/Checkout Page/Group 660.svg'
 import Img_Pe from '../../../assets/Images/Checkout Page/Group 9884.svg'
 import Img_Paytm from '../../../assets/Images/Checkout Page/Group 9885.svg'
+import { useForm } from 'react-hook-form';
+
+
 
 import { Div_options, Div_options_Title, Div_options_TitleGray, H1_main, H2_main, Main, Div_flex,
          Section, Form, H3_main,  Div_flex_form, Div_input, Input, Input_DDNumber, Input_second,
@@ -104,6 +107,22 @@ function MainCheckout() {
       Div_paytm.style.display = "block";
    }
 
+   const {register, handleSubmit, setValue, setFocus} = useForm();
+
+  const onSubmit = (e: any) => {
+      console.log(e);
+   }
+
+   function CEP(e: { target: { value: string } }): void{
+      const pinCode = e.target.value.replace(/\D/g, '');
+
+      fetch(`https://viacep.com.br/ws/${pinCode}/json/`).then(res => res.json()).then(data => {
+         setValue('address', data.logradouro);
+         setValue('city', data.localidade);
+         setValue('uf', data.uf);
+      });
+   }
+
     return (
       <Main>
          <Section>
@@ -122,7 +141,7 @@ function MainCheckout() {
                <Img_none id='Icon_down_adress' onClick={CloseAdress}  src={arrow_nav_down} alt="" />
             </Div_flex>
 
-            <Form id='Form_adress' action="">
+            <Form onSubmit={handleSubmit(onSubmit)} id='Form_adress' action="">
                < Div_flex_form>
                   <Div_input>
                      <H3_main>Full Name</H3_main>
@@ -131,30 +150,30 @@ function MainCheckout() {
 
                   <Div_input>
                      <H3_main>Street Address</H3_main>
-                     <Input type="text" placeholder='Enter Address ' />
+                     <Input type="text" placeholder='Enter Address ' {...register("address" )} />
                   </Div_input>
 
                   <Div_input>
                      <H3_main>City</H3_main>
-                     <Input type="text" placeholder='Enter City' />
+                     <Input type="text" placeholder='Enter City' {...register("city" )} />
                   </Div_input>
                </ Div_flex_form>
 
                < Div_flex_form>
                   <Div_input>
                      <H3_main>Mobile Number</H3_main>
-                     <Input_DDNumber type="text" placeholder='+11' />
+                     <Input_DDNumber type="text" placeholder='+11'  />
                      <Input type="text" placeholder='Enter Number' />
                   </Div_input>
 
                   <Div_input>
                      <H3_main>State</H3_main>
-                     <Input_second type="text" placeholder='Enter State' />
+                     <Input_second type="text" placeholder='Enter State' {...register("uf" )} />
                   </Div_input>
 
                   <Div_input>
                      <H3_main>Pin code</H3_main>
-                     <Input_second type="text" placeholder='Enter Pin Code' />
+                     <Input_second type="text" placeholder='Enter Pin Code' {...register("pinCode")} onBlur={CEP} />
                   </Div_input>
                </ Div_flex_form>
             </Form>
@@ -250,3 +269,4 @@ function MainCheckout() {
   }
   
   export default MainCheckout
+

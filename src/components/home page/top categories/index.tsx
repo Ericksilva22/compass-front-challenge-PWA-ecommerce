@@ -8,7 +8,7 @@ function Categories() {
    return (
       <Sectioncategories>
          <H1_categories>Top categories</H1_categories>
-         <a href="./src/assets/Pages/Category pages/handbags/handbagsPage1.html">
+         <a href="./Category pages/handbags/handbagsPage1.html">
             <Img_categoreis src={Img_categories} alt="" />
          </a>
          

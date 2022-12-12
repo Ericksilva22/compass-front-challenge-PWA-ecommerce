@@ -42,31 +42,31 @@ function Header() {
             <HeaderNav>
                <UlNav className="nav__ul">
                   <Li>
-                     <LinksLi href="./src/assets/Pages/Category pages/handbags/handbagsPage1.html">
+                     <LinksLi href="./Category pages/handbags/handbagsPage1.html">
                         Handbags
                      </LinksLi>
                   </Li>
 
                   <Li>
-                     <LinksLi href="./src/assets/Pages/Category pages/watches/watchesPage1.html">
+                     <LinksLi href="./Category pages/watches/watchesPage1.html">
                         Watches
                      </LinksLi>
                   </Li>
                      
                   <Li >
-                     <LinksLi href="./src/assets/Pages/Category pages/skincare/skincarePage1.html">
+                     <LinksLi href="./Category pages/skincare/skincarePage1.html">
                         Skincare
                      </LinksLi>
                      
                   </Li>
                   <Li >
-                     <LinksLi href="./src/assets/Pages/Category pages/jewellery/jewelleryPage1.html">
+                     <LinksLi href="./Category pages/jewellery/jewelleryPage1.html">
                         Jewellery
                      </LinksLi>
                      
                   </Li>
                   <Li >
-                     <LinksLi href="./src/assets/Pages/Category pages/apparels/apparelsPage1.html">
+                     <LinksLi href="./Category pages/apparels/apparelsPage1.html">
                         Apparels
                      </LinksLi>
                   </Li>
@@ -78,7 +78,7 @@ function Header() {
             </Headerform>
             <Headericons>
                <img src={Icon_like} alt="Wishlist icon" />
-               <a href="./src/assets/Pages/checkout.html">
+               <a href="./profile.html">
                   <img src={Icon_profile} alt="Profile icon" />
                </a>
                <Img_icon onClick={displayModal} id='icon_bag' src={Icon_bag} alt="Bag icon" />

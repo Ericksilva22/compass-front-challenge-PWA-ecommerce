@@ -11,7 +11,7 @@ function ContentPage404() {
       <P>The Page you were looking for does not exist.</P>
       <P>Are you sure the website URL is correct?</P>
       <BtnPage404>
-        <BtnLink href="../../../index.html">Go back home page</BtnLink>
+        <BtnLink href="./home page.html">Go back home page</BtnLink>
       </BtnPage404>
      </Main>
    )

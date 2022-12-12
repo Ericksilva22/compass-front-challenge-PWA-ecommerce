@@ -50,11 +50,11 @@ function Modal() {
 
                   <Div_apply>
                      <P_Div_apply>Apply Coupon Code</P_Div_apply>
-                     <A_Div_apply href="../page404.html">CHECK</A_Div_apply>
+                     <A_Div_apply href="./page404.html">CHECK</A_Div_apply>
                   </Div_apply>
 
                   <Btn_Order>
-                     <a href="./src/assets/Pages/cart.html">
+                     <a href="./cart.html">
                         <P_BtnOrder>Place Order</P_BtnOrder>
                      </a>
                      

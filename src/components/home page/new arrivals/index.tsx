@@ -38,7 +38,7 @@ function NewArrivals() {
          <DivArrivals>
             <ArrivalsTitle>New Arrivals</ArrivalsTitle>
             <DivTitle>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Arrivalsh3>View All</Arrivalsh3>
                </a>
                <img src={Img_arrow} alt="Arrow icon" />
@@ -47,7 +47,7 @@ function NewArrivals() {
          <motion.div drag="x" dragConstraints={{right: 0, left: -300}}>
             <DivArrivalsItens>
                <ArrivalsItens> 
-                  <a href="./src/assets/Pages/Product pages/Blossom.html">
+                  <a href="./Product pages/Blossom.html">
                   <Img_width src={Img_arrivals1} alt="Blossom Pouch" />
                   </a>
                   <ArrivalsItensName>
@@ -60,7 +60,7 @@ function NewArrivals() {
                </ArrivalsItens>
 
                <ArrivalsItens>
-                  <a href="./src/assets/Pages/Product pages/Coach.html">
+                  <a href="./Product pages/Coach.html">
                      <Img_width src={Img_arrivals2} alt="Leather Coach Bag" />
                   </a>
                   <ArrivalsItensName>
@@ -73,7 +73,7 @@ function NewArrivals() {
                </ArrivalsItens>
 
                <ArrivalsItens>
-                  <a href="./src/assets/Pages/Product pages/BrownBag.html">
+                  <a href="./Product pages/BrownBag.html">
                      <Img_width src={Img_arrivals3} alt="Brown bag" />
                   </a>
                   <ArrivalsItensName>
@@ -86,7 +86,7 @@ function NewArrivals() {
                </ArrivalsItens>
 
                <ArrivalsItens>
-                  <a href="./src/assets/Pages/Product pages/BlackBag.html">
+                  <a href="./Product pages/BlackBag.html">
                      <Img_width src={Img_arrivals4} alt="Black Bag" />
                   </a>
                   <ArrivalsItensName>
@@ -99,7 +99,7 @@ function NewArrivals() {
                </ArrivalsItens>
 
                <ArrivalsItens>
-                  <a href="./src/assets/Pages/Product pages/BlackBag.html">
+                  <a href="./Product pages/BlackBag.html">
                      <Img_width src={Img_arrivals4} alt="Black Bag" />
                   </a>
                   <ArrivalsItensName>
@@ -112,7 +112,7 @@ function NewArrivals() {
                </ArrivalsItens>
 
                <ArrivalsItens>
-                  <a href="./src/assets/Pages/Product pages/BlackBag.html">
+                  <a href="./Product pages/BlackBag.html">
                      <Img_width src={Img_arrivals4} alt="Black Bag" />
                   </a>
                   <ArrivalsItensName>

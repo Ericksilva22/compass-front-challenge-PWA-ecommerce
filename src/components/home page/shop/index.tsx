@@ -23,37 +23,37 @@ function ShopBrands() {
          <DivBrands>
 
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_zara} alt="Buy Zara" />
                </a>
             </Div_flex>
 
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_DG} alt="BUY D&G" />
                </a>
             </Div_flex>
             
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_HM} alt="Buy H&M" />
                </a>
             </Div_flex>
 
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_channel} alt="Buy channel" />
                </a>
             </Div_flex>
 
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_prada} alt="Buy prada" />
                </a>
             </Div_flex>
 
             <Div_flex>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_flex src={Img_biba} alt="Buy BIBA" />
                </a>
             </Div_flex>
@@ -61,13 +61,13 @@ function ShopBrands() {
          </DivBrands>
 
          <FigureShotcurt>
-            <a href="./src/assets/Pages/page404.html">
+            <a href="./page404.html">
                <ImgShotcurt src={Img_shortcut} alt="Look makeup accessories" />
             </a>
          </FigureShotcurt>
          <Shoph2>Makeup & Skincare</Shoph2>
          <FigureShop>
-            <a href="./src/assets/Pages/page404.html">
+            <a href="./page404.html">
                <ImgLifestyle src={Img_Lifestyle} alt="Look makeup accessories" />
             </a>
          </FigureShop>
@@ -77,7 +77,7 @@ function ShopBrands() {
                <Skin_p>
                   Skincare <br /> Essentials
                </Skin_p>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Skin_Arrow1 src={Img_arrow1} alt="Arrow icon" />
                </a>
                
@@ -88,7 +88,7 @@ function ShopBrands() {
                <Face_p>
                   Facepacks<br /> & Peels
                </Face_p>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Skin_Arrow1 src={Img_arrow2} alt="Arrow icon" />
                </a>
             </Div_faceapp>
@@ -97,11 +97,11 @@ function ShopBrands() {
          <Shoph3>Trending Deals</Shoph3>
          <motion.div drag="x" dragConstraints={{right: 0, left: -540}}>
             <Carousel>
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_shotcut src={Img_spring} alt="" />
                </a>
 
-               <a href="./src/assets/Pages/page404.html">
+               <a href="./page404.html">
                   <Img_shotcut src={Img_spring} alt="" />
                </a>
             </Carousel>

@@ -26,7 +26,7 @@ function Header() {
       <Headerhome>
          <Div_desktop>
             <h1 className="header__h1">
-               <a href="../../../index.html">
+               <a href="./home page.html">
                   <img className="img_logo" src={Logo} alt="Coral" />
                </a>
             </h1>

@@ -7,6 +7,14 @@ function SignupPhone() {
   const [DD, setDD] = useState("");
   const [phoneNumber, setphoneNumber] = useState("");
 
+  function next(){
+    if(DD && phoneNumber){ // check inputs
+      document.location.pathname = "./src/assets/Pages/Signup-OTP.html"; //change to home page
+    } else {
+      alert("Failed! Enter a valid number")
+    }
+  }
+
    return (
     <Main>
       <H1>Enter your phone number</H1>
@@ -28,8 +36,8 @@ function SignupPhone() {
         />
       </div>
       <P_signup>A 4 digit code will be sent to this number.</P_signup>
-      <Button>
-        <a href="./Signup-OTP.html">Next</a>
+      <Button onClick={next}>
+        Next
       </Button>
     </ Main>
      

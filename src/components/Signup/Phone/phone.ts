@@ -119,14 +119,11 @@ export const Button = styled.button`
     background-color: #1B4B66;
     border-radius: 8px;
     margin-top: 4rem;
-
-    a {
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.875rem;
-    }
-
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    
     @media (min-width:426px) {
         width: 37%;
     }

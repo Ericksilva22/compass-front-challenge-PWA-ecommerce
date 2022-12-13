@@ -4,8 +4,21 @@ import { Headerinput } from '../header/header'
 
 export const Div_subtitles = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    @media (max-width:425px) {
+        justify-content: flex-start;
+    }
+
+    img {
+
+        display: none;
+        @media (max-width:425px) {
+            display: inline;
+        }
+    }
+
+
 `
 
 export const Link_profile = styled(Div_options_TitleGray)`
@@ -67,6 +80,11 @@ export const Div_none = styled.div`
 export const Search_orders = styled(Headerinput)`
     width: 18.5rem;
     margin-right: 2rem;
+    margin-left: 51rem;
+    
+    @media (max-width:425px) {
+        display: none;
+    }
 `
 
 export const Div = styled.div`
@@ -76,6 +94,15 @@ export const Div = styled.div`
     justify-content: flex-start;
     height: 4.25rem;
     border-radius: 12px;
+
+    @media (max-width:425px) {
+        width: 130%;
+        height: 2.25rem;
+    }
+
+    @media (max-width:320px) {
+        width:147%;
+    }
 
     div {
         width: 7.563rem;
@@ -87,6 +114,13 @@ export const Div = styled.div`
         border-radius: 8px;
         color: #626262;
         cursor: pointer;
+
+        @media (max-width:425px) {
+            width: 130%;
+            height: 1.55rem;
+        }
+
+        
     }
 
     h4 {
@@ -100,6 +134,10 @@ export const Div_2 = styled.div`
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     margin-top: 1rem;
+
+    @media (max-width:425px) {
+        display: none;
+    }
 
     h4 {
         font-weight: 500;
@@ -120,8 +158,37 @@ export const Div_3 = styled.div`
     height: 4.875rem;
     border-radius: 8px;
 
+
+    @media (max-width:425px) {
+        width:130%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 8.5rem;
+        padding-top: -1rem;
+        padding-bottom: 1rem;
+    }
+
+    @media (max-width:320px) {
+        width:147%;
+        
+    }
+
+    img {
+
+        @media (max-width:425px) {
+            float: right;
+            margin-left: 20rem;
+            margin-top: -5rem;
+        }
+    }
+
     input {
         margin-left: 0.3rem;
+
+        @media (max-width:425px) {
+            display: none;
+        }
     }
 
     h5 {
@@ -129,6 +196,11 @@ export const Div_3 = styled.div`
         font-size: 1rem; 
         margin-right: 2rem;
         margin-left: 3rem;
+
+        @media (max-width:425px) {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
     }
 
     h6 {
@@ -137,5 +209,9 @@ export const Div_3 = styled.div`
         margin-right: 8rem;
         margin-left: 8rem;
         color: #1B4B66;
+
+        @media (max-width:425px) {
+            display: none;
+        }
     }
 `

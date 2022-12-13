@@ -1,11 +1,11 @@
 import arrow_nav from '../../../assets/Images/Profile Page/Vector-arrow.svg'
-
-
+import Img_arrow_mob from '../../../assets/Images/Category page/leading-icon_mob.svg'
 
 import SideMenu from '../main/nav'
 import {Icon_arrow, Div_options_Title, Div_options_TitleGray} from '../../Product page/main coach/mainCoach'
 import {H1, Div_Titles, } from '../main/main'
 import {Div_subtitles, Div_content, Main, Link_profile, Div_none, Search_orders, Div, Div_2, Div_3 } from './orders'
+import { Img_arrow_mobile } from '../Add New Adress/newAdress'
 
 function MainProfileOrders() {
 
@@ -63,6 +63,9 @@ function MainProfileOrders() {
                 <Div_options_TitleGray>My Orders</Div_options_TitleGray>
             </Div_Titles>
             <Div_subtitles>
+                <a href="./profile.html">
+                    <img src={Img_arrow_mob} alt="" />
+                </a>
                 <H1>My Orders</H1>
                 <Search_orders type="search" placeholder='search' name="search_orders" id="search_orders" />
             </Div_subtitles>

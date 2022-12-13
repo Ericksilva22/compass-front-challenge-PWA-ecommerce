@@ -9,6 +9,7 @@ import Img_apple from '../../../assets/Images/Checkout Page/image 28.svg'
 import Img_Google from '../../../assets/Images/Checkout Page/Group 660.svg'
 import Img_Pe from '../../../assets/Images/Checkout Page/Group 9884.svg'
 import Img_Paytm from '../../../assets/Images/Checkout Page/Group 9885.svg'
+import MaskedInput from 'react-text-mask';
 import { useForm } from 'react-hook-form';
 
 
@@ -109,7 +110,7 @@ function MainCheckout() {
 
    const {register, handleSubmit, setValue, setFocus} = useForm();
 
-  const onSubmit = (e: any) => {
+   const onSubmit = (e: any) => {
       console.log(e);
    }
 
@@ -122,6 +123,11 @@ function MainCheckout() {
          setValue('uf', data.uf);
       });
    }
+
+   function DDNumber() {
+      setFocus('phoneNumber');
+   }
+
 
     return (
       <Main>
@@ -162,8 +168,14 @@ function MainCheckout() {
                < Div_flex_form>
                   <Div_input>
                      <H3_main>Mobile Number</H3_main>
-                     <Input_DDNumber type="text" placeholder='+11'  />
-                     <Input type="text" placeholder='Enter Number' />
+                     
+                     <MaskedInput onBlur={DDNumber}
+                        mask={['+', /[1-9]/, /\d/]}
+                        placeholder='+11'
+                        style={{backgroundColor: '#F1F1F1', border: 'none', borderRadius: '4px', width: '4.2rem', height: '3.25rem',paddingLeft: '1rem', marginRight: '1.4rem', marginLeft:'1rem', marginBottom: '1rem'}}
+                     />
+
+                     <Input maxLength={14} type="text" placeholder='Enter Number' {...register("phoneNumber" )} />
                   </Div_input>
 
                   <Div_input>
@@ -259,7 +271,7 @@ function MainCheckout() {
             <Div_flex_next>
                <Link href="./cart.html">Back to cart</Link>
                <Button>
-                  <a href="">Next</a>
+                  <a href="./confirmed.html">Next</a>
                </Button>
             </Div_flex_next>
          </Section>

@@ -22,7 +22,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">My orders</Link_li>
+            <Link_li href="./profile - Orders.html">My orders</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

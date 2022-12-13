@@ -34,7 +34,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">My Reviews</Link_li>
+            <Link_li href="./profile-Reviews.html">My Reviews</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
 

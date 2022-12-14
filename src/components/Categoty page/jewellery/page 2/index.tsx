@@ -26,7 +26,7 @@ function MainJewellery() {
             <Content_banner src={Img_banner} alt="70% OFF BLACK FRIDAY" />
          </Figure_banner>
          <Div_options>
-            <Div_options_Title href="../../../../../index.html">Home</Div_options_Title>
+            <Div_options_Title href="../../home page.html">Home</Div_options_Title>
             <img src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>Jewellery</Div_options_TitleGray>
          </Div_options>

@@ -62,6 +62,11 @@ export const Footer_title = styled.h3`
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 `
 
 export const Footer_links = styled.a`

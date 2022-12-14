@@ -133,7 +133,7 @@ function MainCheckout() {
       <Main>
          <Section>
             <Div_options>
-               <Div_options_Title href="../../../../../index.html">Home</Div_options_Title>
+               <Div_options_Title href="./home page.html">Home</Div_options_Title>
                <img src={arrow_nav} alt="Arrow icon" />
                <Div_options_TitleGray>Checkout</Div_options_TitleGray>
             </Div_options>

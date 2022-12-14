@@ -55,7 +55,9 @@ function Footer() {
             </ShopCategory>
 
             <ShopCategory>
-               <Footer_title>About</Footer_title>
+               <Footer_title>
+                  <a href="../about.html">About</a>
+               </Footer_title>
                <Footer_links href="../page404.html">Contact Us</Footer_links>
                <Footer_links href="../page404.html">About Us</Footer_links>
                <Footer_links href="../page404.html">Careers</Footer_links>

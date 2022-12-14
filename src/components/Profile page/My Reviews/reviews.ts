@@ -19,7 +19,7 @@ export const Main = styled.main`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        margin-left: 10rem;
     }
 
     h3 {

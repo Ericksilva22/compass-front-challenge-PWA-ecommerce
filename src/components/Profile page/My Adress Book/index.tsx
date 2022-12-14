@@ -3,6 +3,8 @@ import Img_arrow_mob from '../../../assets/Images/Category page/leading-icon_mob
 
 import { H1_main, Img_arrow_mobile } from '../../Categoty page/handbags/page 1/mainHandbags'
 import {Header_mobile, Main, Button } from './book'
+import { Div_content, Div_none } from '../My Orders/orders'
+import SideMenu from '../main/nav'
 
 function Book() {
     return (
@@ -13,16 +15,22 @@ function Book() {
                 </a>
                 <H1_main>My Adress Book</H1_main>
             </Header_mobile>
-            <Main>
-                <figure>
-                    <img src={Img_book} alt="" />
-                </figure>
-                <h3>No Adress</h3>
-                <p>It seems you have not added any products to for wishlist. </p>
-                <Button>
-                    <a href="./addAdress.html">Add Adress</a>
-                </Button>
-            </Main>
+            <Div_content>
+                <Div_none >
+                    <SideMenu/>
+                </Div_none >
+            
+                <Main>
+                    <figure>
+                        <img src={Img_book} alt="" />
+                    </figure>
+                    <h3>No Adress</h3>
+                    <p>It seems you have not added any products to for wishlist. </p>
+                    <Button>
+                        <a href="./addAdress.html">Add Adress</a>
+                    </Button>
+                </Main>
+            </Div_content>
         </section>
         
       

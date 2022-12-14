@@ -24,6 +24,10 @@ import { Main, Figure_banner, Content_banner, Div_options, Div_options_Title, Di
    P_show_items, P_sort, Span_show, Select_show, Option_show, Section_selectPage, Link_selectPage, Div_mobile,
    Div_pages, Div_next, Link_selectPage_actived, Link_next, Img_arrow_mobile, Div_sort_mobile, DivArrivalsItens_none} from './mainHandbags'
 
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import { IProducts } from '../../../interfaces/IProducts'
+
 function MainHandbags() {
 
 
@@ -34,6 +38,18 @@ function MainHandbags() {
       fade.style.display = "block";
    }
 
+   const [products, setProducts] = useState<IProducts[]>([])
+
+   useEffect(() => {
+      axios.get('http://localhost:3000/products')
+      .then(id => {
+         console.log(id)
+      })
+      .catch(erro => {
+         console.log(erro)
+      })
+     
+   }, [])
    
     return (
       <Main>
@@ -154,7 +170,7 @@ function MainHandbags() {
                            <Card_img src={Img_Blossom} alt="Blossom Pouch" />
                         </a>
                         <ArrivalsItensName>
-                           <ArrivalsItensh4 >Grande</ArrivalsItensh4 >
+                           <ArrivalsItensh4 >grande</ArrivalsItensh4 >
                            <img src={Img_like} alt="Like icon" />
                         </ArrivalsItensName>
                         <ArrivalsItensP>Blossom Pouch</ArrivalsItensP>

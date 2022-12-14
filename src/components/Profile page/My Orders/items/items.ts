@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Div_options_TitleGray } from '../../../Product page/main coach/mainCoach'
 import { Headerinput } from '../../header/header'
 import { Div_Titles } from '../../main/main'
+import { H1_order } from '../../../checkout page/Order/Order'
 
 export const DiV_titles_items = styled(Div_Titles)`
     width: 40%;
@@ -160,69 +161,73 @@ export const Div_2 = styled.div`
 
 `
 
-export const Div_3 = styled.div`
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    background: #F1F1F1;
-    height: 4.875rem;
+export const Div_information = styled.div`
+    margin-top: 2rem;
+    width:30%;
+    @media (max-width: 425px){
+        width:40%;
+    }
+
+
+    * {
+        border: none;
+    }
+   
+   h2 {
+        font-weight: 500;
+        font-size: 1rem;
+        color: #626262;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+`
+export const Btn_reoder = styled.button`
+    width: 8.5rem;
+    height: 2.75rem;
+    background-color: #1B4B66;
+    border-radius: 8px;
+    border: none;
+    margin-right: 1rem;
+    margin-left: 44rem;
+
+    @media (max-width: 425px){
+        width:125%;
+        margin-left: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+`
+
+export const Btn_addBag = styled.button`
+    width: 8.5rem;
+    height: 2.75rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #1B4B66;
+
+    @media (max-width: 425px){
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1B4B66;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+`
+
+export const Img_bloss = styled.img`
+    width: 50%;
     border-radius: 8px;
 
-
-    @media (max-width:425px) {
-        width:130%;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 8.5rem;
-        padding-top: -1rem;
-        padding-bottom: 1rem;
-    }
-
-    @media (max-width:320px) {
-        width:147%;
-        
-    }
-
-    img {
-
-        @media (max-width:425px) {
-            float: right;
-            margin-left: 20rem;
-            margin-top: -5rem;
-        }
-    }
-
-    input {
-        margin-left: 0.3rem;
-
-        @media (max-width:425px) {
-            display: none;
-        }
-    }
-
-    h5 {
-        font-weight: 500;
-        font-size: 1rem; 
-        margin-right: 2rem;
-        margin-left: 3rem;
-
-        @media (max-width:425px) {
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-        }
-    }
-
-    h6 {
-        font-weight: 500;
-        font-size: 1rem; 
-        margin-right: 8rem;
-        margin-left: 8rem;
-        color: #1B4B66;
-
-        @media (max-width:425px) {
-            display: none;
-        }
-    }
 `

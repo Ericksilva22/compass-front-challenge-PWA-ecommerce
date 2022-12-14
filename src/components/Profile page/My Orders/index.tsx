@@ -103,7 +103,10 @@ function MainProfileOrders() {
                         <h5>December 16, 2022</h5>
                         <h5>$218.50</h5>
                         <h6>Paid</h6>
-                        <img src={arrow_nav} alt="" />
+                        <a href="./profile - Orders - items.html">
+                            <img src={arrow_nav} alt="" />
+                        </a>
+                        
                     </Div_3>
 
                 </Main>

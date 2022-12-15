@@ -29,6 +29,50 @@ export const ButtonLogout_subtitles = styled.button`
     }
 `
 
+export const Div_profile = styled.div`
+    display: flex;
+    align-items: flex-end;
+    height: 8rem;
+    margin-bottom: 1rem;
+`
+
+export const Img_profile = styled.img`
+    width: 8%;
+    border-radius: 99999px;
+
+    @media (max-width: 425px) {
+        width: 20%;
+    }
+`
+
+export const Btn_upload = styled.button`
+    
+    background-color: #1B4B66;
+    color: #FFFFFF;
+    width: 8.5rem;
+    height: 2.375rem;
+    border: none;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+`
+
+export const Btn_delete = styled.button`
+    
+    color: #B00020;
+    width: 8.5rem;
+    height: 2.375rem;
+    border: 2px solid #B00020;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+`
+
 export const Div_content = styled.div`
     display:flex;
 
@@ -162,4 +206,13 @@ export const Eye_icon = styled.img`
 export const H3 = styled(H2)`
     margin-top: 2rem;
     margin-bottom: 3rem;
+`
+
+export const Button_saveChanges = styled(Btn_upload)`
+    margin-left: 55rem;
+
+    @media (max-width: 425px) {
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
 `

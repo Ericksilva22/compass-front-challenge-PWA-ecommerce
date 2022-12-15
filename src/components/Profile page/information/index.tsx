@@ -2,13 +2,14 @@ import arrow_nav from '../../../assets/Images/Product Page/chevron-right-small.s
 import Img_no_profile from '../../../assets/Images/Profile Page/no-profile-picture.jpg'
 import Img_button_logout from '../../../assets/Images/Profile Page/logout.svg'
 import Img_eye from '../../../assets/Images/Profile Page/Trailing Icons.svg'
+import Img_delete from '../../../assets/Images/Profile Page/delete-small.svg'
 
 
 import SideMenu from '../main/nav'
 import {Icon_arrow, Div_options_Title, Div_options_TitleGray} from '../../Product page/main coach/mainCoach'
 import {H1, Div_Titles, } from '../main/main'
 import {Div_subtitles, ButtonLogout_subtitles, Div_content, Main, H2, Label, Div_names, Input_names, Input_email, 
-        Input_DDD, Input_number, Input_password, Eye_icon, H3 } from './information'
+        Input_DDD, Input_number, Input_password, Eye_icon, H3, Div_profile, Btn_upload, Btn_delete, Img_profile, Button_saveChanges } from './information'
 
 function MainProfileInformation() {
     return (
@@ -22,14 +23,19 @@ function MainProfileInformation() {
                 <H1>Personal Information</H1>
                 <ButtonLogout_subtitles>
                     <img src={Img_button_logout} alt="Logout icon" />
-                    <a href=''>Logout</a>
+                    <a href='../../../index.html'>Logout</a>
                 </ButtonLogout_subtitles>
             </Div_subtitles>
-            
+                
             <Div_content>
                 <SideMenu />
                 <Main>
                     <H2>Personal Information</H2>
+                    <Div_profile>
+                        <Img_profile src={Img_no_profile} alt="" />
+                        <Btn_upload>Upload</Btn_upload>
+                        <Btn_delete> <img src={Img_delete} alt="" /> Delete</Btn_delete>
+                    </Div_profile>
                     <form action="">
                         <Div_names>
                             <div>
@@ -73,6 +79,7 @@ function MainProfileInformation() {
                             <Input_password type="password" name="confirm" id="confirm" placeholder='*******' />
                         </div>
                     </form>
+                    <Button_saveChanges>Save Changes</Button_saveChanges>
                 </Main>
             </Div_content>
         </section>

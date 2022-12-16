@@ -11,6 +11,7 @@ import Icon_notification_mobile  from '../../assets/Images/Home Page/notificatio
 
 import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon, ImgLabel, Img_icon,
    Div_desktop, Div_mobile, A} from './header'
+import { InputHTMLAttributes } from 'react'
 
 function Header() {
 
@@ -28,6 +29,24 @@ function Header() {
       modal.style.display = "block";
       fade.style.display = "block";
       
+   }
+
+   function search() {
+      
+
+      const search_header = document.querySelector<HTMLTextAreaElement>('#search_header')!;
+      
+      if (search_header.value === "coach bag ") {
+         document.location.pathname = "./src/assets/Pages/Product pages/Coach.html";
+      } else if (search_header.value === "blossom bag ") {
+         document.location.pathname = "./src/assets/Pages/Product pages/Blossom.html";
+      } else if (search_header.value === "brown bag ") {
+         document.location.pathname = "./src/assets/Pages/Product pages/BrownBag.html ";
+      } else if (search_header.value === "watches") {
+         document.location.pathname = "./src/assets/Pages/Product pages/Watches.html";
+      } else if (search_header.value === "black bag ") {
+         document.location.pathname = "./src/assets/Pages/Product pages/BlackBag.html";
+      } 
    }
 
 
@@ -73,7 +92,7 @@ function Header() {
                </UlNav>
             </HeaderNav>
             <Headerform>
-               <Headerinput placeholder='search for products or brands.....' type="search" />
+               <Headerinput onChange={search} id='search_header' placeholder='search for products or brands.....' type="search" />
                <SearchIcon className="search-icon"  src={Icon_search} alt="Search icon" />
             </Headerform>
             <Headericons>

@@ -34,7 +34,7 @@ function MainWatches() {
     return (
       <Main_coach>
          <Div_options>
-            <Div_options_Title href="../../../../index.html">Home</Div_options_Title>
+            <Div_options_Title href="../home page.html">Home</Div_options_Title>
             <Icon_arrow src={arrow_nav} alt="Arrow icon" />
             <Div_options_Title>Handbag</Div_options_Title>
             <Icon_arrow src={arrow_nav} alt="Arrow icon" />

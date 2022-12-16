@@ -46,7 +46,9 @@ function Header() {
          document.location.pathname = "./src/assets/Pages/Product pages/Watches.html";
       } else if (search_header.value === "black bag ") {
          document.location.pathname = "./src/assets/Pages/Product pages/BlackBag.html";
-      } 
+      } else if(" ") {
+         document.location.pathname = "./src/assets/Pages/productsNotFound.html";
+      }
    }
 
 

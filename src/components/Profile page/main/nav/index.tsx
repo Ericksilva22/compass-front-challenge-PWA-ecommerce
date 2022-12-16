@@ -46,7 +46,7 @@ function SideMenu() {
 
           <li>
             <div></div>
-            <Link_li href="">My Saved Cards</Link_li>
+            <Link_li href="./profile - SavedCards.html">My Saved Cards</Link_li>
             <a href=""> <img src={Img_li_arrow} alt="arrow icon" /></a>
           </li>
         </ul>

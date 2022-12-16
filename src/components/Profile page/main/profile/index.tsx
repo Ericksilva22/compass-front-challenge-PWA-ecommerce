@@ -8,8 +8,8 @@ function Profile() {
     <Div_profile>
       <Image_profile src={Img_no_profile} alt="profile image" />
       <div>
-        <Name_profile>Complete seu perfil</Name_profile>
-        <Email_profile>user@email.com</Email_profile>
+        <Name_profile>Erickson Rodrigues</Name_profile>
+        <Email_profile>ericksonrodrigues13@gmail.com</Email_profile>
         <Phone_profile>+55 86 9 9999-9999</Phone_profile>
       </div>
       <img src={Img_li_arrow} alt="" />

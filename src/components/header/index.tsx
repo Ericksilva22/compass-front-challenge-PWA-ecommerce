@@ -10,7 +10,7 @@ import Icon_add_mobile  from '../../assets/Images/Home Page/add-to-homescreen-mo
 import Icon_notification_mobile  from '../../assets/Images/Home Page/notification-mobile.svg'
 
 import { Li, LinksLi, UlNav, Headerhome, HeaderNav, Headerform, Headericons, Headerinput, SearchIcon, ImgLabel, Img_icon,
-   Div_desktop, Div_mobile} from './header'
+   Div_desktop, Div_mobile, A} from './header'
 
 function Header() {
 
@@ -94,7 +94,7 @@ function Header() {
                   </li>
 
                   <li>
-                     <h1>Home</h1>
+                     <A href="./home page.html">Home</A>
                   </li>
 
                   <li>

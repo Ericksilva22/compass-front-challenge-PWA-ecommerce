@@ -39,7 +39,7 @@ function MainWatches() {
             <Div_options_Title>Handbag</Div_options_Title>
             <Icon_arrow src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>Label</Div_options_TitleGray>
-            <a href="../../../../index.html">
+            <a href="../home page.html">
                <Icon_arrow_mobile src={Img_arrowLeft} alt="Arrow icon" />
             </a>
          </Div_options>
@@ -48,8 +48,8 @@ function MainWatches() {
                <Img_Main src={Img_watches} alt="Leathe Coach Bag with adjustable starps" />
             </Figure>
             <Div_description_product>
-               <H1_description_product>Grande</H1_description_product>
-               <P_description_product>Blossom Pouch.</P_description_product>
+               <H1_description_product>watchzinho</H1_description_product>
+               <P_description_product>Blossom watch.</P_description_product>
                <Div_ratings>
                   <img src={Img_ratings} alt="Ratings" />
                   <P_ratings>(250) Ratings</P_ratings>

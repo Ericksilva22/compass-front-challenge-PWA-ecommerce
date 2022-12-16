@@ -47,11 +47,11 @@ function MainCart() {
     return (
       <Main>
          <Div_options>
-            <Div_options_Title href="../../../../../index.html">Home</Div_options_Title>
+            <Div_options_Title href="../../home page.html">Home</Div_options_Title>
             <img src={arrow_nav} alt="Arrow icon" />
             <Div_options_TitleGray>My cart</Div_options_TitleGray>
          </Div_options>
-         <a href="../../../index.html">
+         <a href="./home page.html">
             <Img_arrow_mobile src={arrow_nav_left} alt="Arrow icon" />
          </a>
          <H1_main>My cart</H1_main>

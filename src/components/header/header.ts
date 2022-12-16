@@ -45,6 +45,16 @@ export const Div_mobile = styled.div`
 
 `
 
+export const A = styled.a`
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1B4B66;
+    margin-left: 0.5rem;
+    margin-right: 12rem;
+    text-decoration: none;
+    
+`
+
 
 export const HeaderNav = styled.nav`
     width: 40%;

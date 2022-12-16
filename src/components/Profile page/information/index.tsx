@@ -12,6 +12,11 @@ import {Div_subtitles, ButtonLogout_subtitles, Div_content, Main, H2, Label, Div
         Input_DDD, Input_number, Input_password, Eye_icon, H3, Div_profile, Btn_upload, Btn_delete, Img_profile, Button_saveChanges } from './information'
 
 function MainProfileInformation() {
+
+    function savechanges() {
+        alert("successfully saved changes");
+        document.location.pathname = "./src/assets/Pages/profile.html";
+    }
     return (
         <section>
             <Div_Titles>
@@ -57,8 +62,8 @@ function MainProfileInformation() {
                         
                         <Label htmlFor="number">Mobile Number</Label>
                         <div>
-                            <Input_DDD type="text" placeholder='+55' />
-                            <Input_number type="text" placeholder='(86) 9 9999-9999'/>
+                            <Input_DDD type="text" placeholder='+55' value={"+55"} />
+                            <Input_number type="text" placeholder='(86) 9 9999-9999' value={"(86) 9 9999-9999"}/>
                         </div>
 
                         <div>
@@ -79,7 +84,7 @@ function MainProfileInformation() {
                             <Input_password type="password" name="confirm" id="confirm" placeholder='*******' />
                         </div>
                     </form>
-                    <Button_saveChanges>Save Changes</Button_saveChanges>
+                    <Button_saveChanges onClick={savechanges}>Save Changes</Button_saveChanges>
                 </Main>
             </Div_content>
         </section>

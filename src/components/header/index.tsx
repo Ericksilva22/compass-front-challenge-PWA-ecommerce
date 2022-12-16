@@ -46,7 +46,7 @@ function Header() {
          document.location.pathname = "./src/assets/Pages/Product pages/Watches.html";
       } else if (search_header.value === "black bag ") {
          document.location.pathname = "./src/assets/Pages/Product pages/BlackBag.html";
-      } else if(" ") {
+      } else if(search_header.value === " ") {
          document.location.pathname = "./src/assets/Pages/productsNotFound.html";
       }
    }
@@ -94,7 +94,7 @@ function Header() {
                </UlNav>
             </HeaderNav>
             <Headerform>
-               <Headerinput onChange={search} id='search_header' placeholder='search for products or brands.....' type="search" />
+               <Headerinput  onChange={search} id='search_header' placeholder='search for products or brands.....' type="search" />
                <SearchIcon className="search-icon"  src={Icon_search} alt="Search icon" />
             </Headerform>
             <Headericons>

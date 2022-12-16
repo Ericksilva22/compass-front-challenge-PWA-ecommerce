@@ -20,7 +20,7 @@ function Confirmed() {
                 <h3>Cheerio!!</h3>
                 <p>The order has been placed. Thanks for shopping with us. You’ll soon recieve the tracking details. </p>
                 <ButtonOrder>
-                    <a href="./home page.html">View Order</a>
+                    <a href="./profile - Orders - items.html">View Order</a>
                 </ButtonOrder>
                 <Button>
                     <a href="./home page.html">Continue Shopping</a>
